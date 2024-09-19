@@ -1,0 +1,310 @@
+﻿
+@{
+    ViewData["Title"] = "TermOfUse";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!--Header Start-->
+<header id="pq-header" class="pq-header-default">
+    <div class="pq-top-header">
+        <div class="container">
+            <div class="row flex-row-reverse">
+                <div class="col-md-6 text-right">
+                    <div class="pq-header-social text-right">
+                        <ul>
+                            <li><a href="https://www.facebook.com/weebtp" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/weebtp/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://twitter.com/weebtp" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pq-header-contact ">
+                        <ul>
+                            <li>
+                                <a href="tel:+8007816632"><i class="fas fa-phone-flip"></i><span>(800)781-6632</span></a>
+                            </li>
+                            <li>
+                                <a href="mailto:initiative@weebtp.com"><i class="fas fa-envelope"></i><span>initiative@weebtp.com</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pq-bottom-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="~/Home/Home">
+                            <img class="img-fluid logo" src="~/Content/WebsiteContent/images/We(e)BTPv2.0.png" alt="We(e)">
+                        </a>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div id="pq-menu-contain" class="pq-menu-contain">
+                                <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                                    @*<li class="menu-item current-menu-item manu-item-has-children">
+                                    <a href="#">Home</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                    <ul class="sub-menu">
+                                    <li class="menu-item">
+                                    <a href="main-home.html" aria-current="page">Main Home</a>
+                                    </li>
+                                    <li class="menu-item current-menu-item">
+                                    <a href="home-modern.html">home modern</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="start-up-home.html">Start Up Home</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="it-agency.html">IT Agency</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="software-company.html">Software Company</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="home-classic.html">home classic</a>
+                                    </li>
+                                    </ul>
+                                    </li>*@
+                                    <li class="menu-item">
+                                        <a href="~/Home/OurServices">Services</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeCodeIGNITE">We(e) CodeIGNITE</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeSecurity360">We(e) Security360</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeCloudSPHERE">We(e) CloudSPHERE</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeNextgenFLOW">We(e) NextgenFLOW</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeBlockCENTRAL">We(e) BlockCENTRAL</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeDatastAIsis">We(e) DatastAIsis</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeePraaS">We(e) PraaS</a>
+                                            </li>
+                                            @*<li class="menu-item">
+                                            <a href="~/Home/DatabaseDevelopment">Database Development</a>
+                                            </li>
+                                            <li class="menu-item">
+                                            <a href="~/Home/DataAnalysisAutomation">Analysis & Automation</a>
+                                            </li>
+                                            <li class="menu-item">
+                                            <a href="~/Home/Office365Development">Office365 Development</a>
+                                            </li>*@
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Industries</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Finance">Finance</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Healthcare">Healthcare</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Retail">Retail</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Education">Education</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/RealEstate">Real Estate</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Travel">Travel</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Other">Others</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="~/Home/Blog">Blog</a>@*<i class="fa fa-chevron-down pq-submenu-icon"></i>*@
+                                        @*<ul class="sub-menu">
+                                        <li class="menu-item menu-item-has-children">
+                                        <a href="#">Grid Style</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                        <li class="menu-item">
+                                        <a href="one-column-blog.html">One Column Blog</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="two-column-blog.html">Two Column Blog</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="three-column-blog.html">Three Column Blog</a>
+                                        </li>
+                                        </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children">
+                                        <a href="#">Blog Sidebar</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                        <li class="menu-item">
+                                        <a href="blog-right-sidebar.html">Blog Right Sidebar</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="blog-left-sidebar.html">Blog Left Sidebar</a>
+                                        </li>
+                                        </ul>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="app-promotes-sales-profits-in-it-solutions.html">
+                                        Blog
+                                        Single
+                                        </a>
+                                        </li>
+                                        </ul>*@
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="~/Home/ContactUs">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pq-menu-search-block">
+                            @*<a href="javascript:void(0)" id="pq-seacrh-btn"><i class="fa fa-search"></i></a>
+                            <div class="pq-search-form">
+
+                            <form role="search" method="get" class="search-form"
+                            action="https://techtrix.peacefulqode.com/">
+                            <label>
+                            <span class="screen-reader-text">Search for:</span>
+                            <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+                            </label>
+                            <button type="submit" class="search-submit">
+                            <span class="screen-reader-text">Search</span>
+                            </button>
+                            </form>
+                            </div>*@
+                        </div>
+                        <a href="~/Home/FreeQuote" class="pq-button">
+                            <div class="pq-button-block">
+
+                                <span class="pq-button-text">Free Quote</span>
+                            </div>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Header End-->
+<!--Breadcrumb Start-->
+<div class="pq-breadcrumb pq-bg-dark pq-bg-img-2">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <nav aria-label="breadcrumb">
+                    <div class="pq-breadcrumb-title">
+                        <h1>Terms Of Use</h1>
+                    </div>
+                    <div class="pq-breadcrumb-container">
+                        <ol class="breadcrumb align-items-center">
+                            <li class="breadcrumb-item">
+                                <a href="~/Home/Home"><i class="fa fa-home me-2"></i>Home</a>
+                            </li>
+                            <li class="breadcrumb-item active">Term Of Use</li>
+                        </ol>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Breadcrumb End-->
+<!--Portfolio-Single Start-->
+<section class="portfolio-single pq-pb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="pq-portfolio-single-title">Terms</h2>
+                <p>
+                    These Terms of Use ("Terms") govern your access to and use of our website, services, and any related content, features, or
+                    functionality (collectively referred to as the "Services"). By accessing or using our Services, you agree to be bound by these Terms, so
+                    please read them carefully.
+                </p>
+                <h2 class="pq-portfolio-single-title">Acceptance of Terms</h2>
+                <p>
+                    By accessing or using our Services, you acknowledge that you have read, understood, and agree to be bound by these Terms and our
+                    Privacy Policy. If you do not agree with any of these terms, please do not use our Services.
+                </p>
+                <h2 class="pq-portfolio-single-title">Description of Services</h2>
+                <p>
+                    We(e) Business Technology Partners, LLC is a business technology consulting company that provides expert advice, solutions, and
+                    services related to technology and digital transformation. Our Services may include, but are not limited to, consulting, project
+                    management, software development, system integration, cybersecurity, data analytics, and training.
+                </p>
+                <h2 class="pq-portfolio-single-title">Intellectual Property</h2>
+                <p>
+                    All content, materials, and trademarks displayed or used on our website or Services are the property of We(e) Business Technology
+                    Partners, LLC or its respective owners. You agree not to reproduce, modify, distribute, or create derivative works based on our content
+                    without obtaining our prior written consent.
+                </p>
+                <h2 class="pq-portfolio-single-title">User Responsibilities</h2>
+                <p>
+                    When using our Services, you agree to:
+                </p>
+                <p>4.1. Provide accurate and up-to-date information.</p>
+                <p>4.2. Comply with all applicable laws, regulations, and third-party rights.</p>
+                <p>4.3. Use our Services only for lawful purposes and not engage in any fraudulent, harmful, or illegal activities.</p>
+                <p>4.4. Respect the privacy and intellectual property rights of others.</p>
+                <p>4.5. Not attempt to gain unauthorized access to our systems or interfere with the proper functioning of our Services.</p>
+                <h2 class="pq-portfolio-single-title">Limitations and Disclaimers</h2>
+                <p>
+                    5.1. While we strive to provide accurate and up-to-date information, our Services are provided on an "as is" and "as available" basis. We
+                    do not warrant the accuracy, completeness, or reliability of any information or content provided.
+                </p>
+                <p>
+                    5.2. We disclaim any warranties, whether express or implied, including but not limited to warranties of merchantability, fitness for a
+                    particular purpose, and non-infringement.
+                </p>
+                <p>
+                    5.3. We(e) Business Technology Partners, LLC shall not be liable for any direct, indirect, incidental, consequential, or punitive damages
+                    arising out of or in connection with your use of our Services, including but not limited to any loss of data, profits, or business
+                    opportunities.
+                </p>
+                <h2 class="pq-portfolio-single-title">Third-Party Websites and Services</h2>
+                <p>
+                    Our Services may contain links or references to third-party websites or services. We have no control over such third-party content, and
+                    we do not endorse, warrant, or assume responsibility for the availability, accuracy, or content of any third-party websites or services. Your use of third-party websites or services is at your own risk.
+                </p>
+                <h2 class="pq-portfolio-single-title">Termination</h2>
+                <p>
+                    We reserve the right to suspend, terminate, or restrict your access to our Services at any time and without prior notice if we believe you
+                    have violated these Terms or applicable laws.
+                </p>
+                <h2 class="pq-portfolio-single-title">Modifications to the Terms</h2>
+                <p>
+                    We may modify or update these Terms from time to time. Any changes will be effective immediately upon posting the revised Terms on
+                    our website. Your continued use of our Services after the posting of any changes constitutes your acceptance of such changes.
+                </p>
+                <h2 class="pq-portfolio-single-title">
+                    Governing Law and Jurisdiction
+                </h2>
+                <p>
+                    These Terms shall be governed by and construed in accordance with the laws of state of Delaware]. Any dispute arising out of or in
+                    connection with these Terms shall be subject to the exclusive jurisdiction of the courts of Delaware.
+                </p>
+                <p>
+                    By using our Services, you acknowledge that you have read, understood, and agreed to these Terms of Use. Thank you for choosing
+                    We(e) Business Technology Partners, LLC as your trusted business technology consulting partner!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Portfolio-Single End-->

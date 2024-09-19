@@ -1,0 +1,689 @@
+﻿
+@{
+    ViewData["Title"] = "Artificial Intelligence: Has Judgment day arrived ? ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!--Header Start-->
+<header id="pq-header" class="pq-header-default">
+    <div class="pq-top-header">
+        <div class="container">
+            <div class="row flex-row-reverse">
+                <div class="col-md-6 text-right">
+                    <div class="pq-header-social text-right">
+                        <ul>
+                            <li><a href="https://www.facebook.com/weebtp" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/weebtp/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://twitter.com/weebtp" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pq-header-contact ">
+                        <ul>
+                            <li>
+                                <a href="tel:+8007816632"><i class="fas fa-phone-flip"></i><span>(800)781-6632</span></a>
+                            </li>
+                            <li>
+                                <a href="mailto:initiative@weebtp.com"><i class="fas fa-envelope"></i><span>initiative@weebtp.com</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pq-bottom-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="~/Home/Home">
+                            <img class="img-fluid logo" src="~/Content/WebsiteContent/images/We(e)BTPv2.0.png" alt="We(e)">
+                        </a>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div id="pq-menu-contain" class="pq-menu-contain">
+                                <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                                    @*<li class="menu-item current-menu-item manu-item-has-children">
+                                    <a href="#">Home</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                    <ul class="sub-menu">
+                                    <li class="menu-item">
+                                    <a href="main-home.html" aria-current="page">Main Home</a>
+                                    </li>
+                                    <li class="menu-item current-menu-item">
+                                    <a href="home-modern.html">home modern</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="start-up-home.html">Start Up Home</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="it-agency.html">IT Agency</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="software-company.html">Software Company</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="home-classic.html">home classic</a>
+                                    </li>
+                                    </ul>
+                                    </li>*@
+                                    <li class="menu-item">
+                                        <a href="~/Home/OurServices">Services</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeCodeIGNITE">We(e) CodeIGNITE</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeSecurity360">We(e) Security360</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeCloudSPHERE">We(e) CloudSPHERE</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeNextgenFLOW">We(e) NextgenFLOW</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeBlockCENTRAL">We(e) BlockCENTRAL</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeDatastAIsis">We(e) DatastAIsis</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeePraaS">We(e) PraaS</a>
+                                            </li>
+                                            @*<li class="menu-item">
+                                            <a href="~/Home/DatabaseDevelopment">Database Development</a>
+                                            </li>
+                                            <li class="menu-item">
+                                            <a href="~/Home/DataAnalysisAutomation">Analysis & Automation</a>
+                                            </li>
+                                            <li class="menu-item">
+                                            <a href="~/Home/Office365Development">Office365 Development</a>
+                                            </li>*@
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Industries</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Finance">Finance</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Healthcare">Healthcare</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Retail">Retail</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Education">Education</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/RealEstate">Real Estate</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Travel">Travel</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Other">Others</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item current-menu-item">
+                                        <a href="~/Home/Blog">Blog</a>@*<i class="fa fa-chevron-down pq-submenu-icon"></i>*@
+                                        @*<ul class="sub-menu">
+                                        <li class="menu-item menu-item-has-children">
+                                        <a href="#">Grid Style</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                        <li class="menu-item">
+                                        <a href="one-column-blog.html">One Column Blog</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="two-column-blog.html">Two Column Blog</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="three-column-blog.html">Three Column Blog</a>
+                                        </li>
+                                        </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children">
+                                        <a href="#">Blog Sidebar</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                        <li class="menu-item">
+                                        <a href="blog-right-sidebar.html">Blog Right Sidebar</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="blog-left-sidebar.html">Blog Left Sidebar</a>
+                                        </li>
+                                        </ul>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="app-promotes-sales-profits-in-it-solutions.html">
+                                        Blog
+                                        Single
+                                        </a>
+                                        </li>
+                                        </ul>*@
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="~/Home/ContactUs">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pq-menu-search-block">
+                            @*<a href="javascript:void(0)" id="pq-seacrh-btn"><i class="fa fa-search"></i></a>
+                            <div class="pq-search-form">
+
+                            <form role="search" method="get" class="search-form"
+                            action="https://techtrix.peacefulqode.com/">
+                            <label>
+                            <span class="screen-reader-text">Search for:</span>
+                            <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+                            </label>
+                            <button type="submit" class="search-submit">
+                            <span class="screen-reader-text">Search</span>
+                            </button>
+                            </form>
+                            </div>*@
+                        </div>
+                        <a href="~/Home/FreeQuote" class="pq-button">
+                            <div class="pq-button-block">
+
+                                <span class="pq-button-text">Free Quote</span>
+                            </div>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Header End-->
+<!--Breadcrumb Start-->
+<div class="pq-breadcrumb pq-bg-dark pq-bg-img-2">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <nav aria-label="breadcrumb">
+                    <div class="pq-breadcrumb-title">
+                        <h1>
+                            Artificial Intelligence: Has Judgment day
+                            arrived?
+                        </h1>
+                    </div>
+                    <div class="pq-breadcrumb-container">
+                        <ol class="breadcrumb align-items-center">
+                            <li class="breadcrumb-item">
+                                <a href="~/Home/Blog"><i class="fa fa-home me-2"></i>Blog</a>
+                            </li>
+                            <li class="breadcrumb-item active">
+                                Artificial Intelligence: Has Judgment day
+                                arrived?
+                            </li>
+                        </ol>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Breadcrumb End-->
+<!--Blog-Single Start-->
+<section class="blog-single">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="pq-blog-post">
+                    <div class="pq-post-media">
+                        <img src="~/Content/WebsiteContent/images/artificial.jpg" alt="blog-img">
+                        <div class="pq-post-date">
+                            <a @*href="#"*@><span>12</span>JAN</a>
+                        </div>
+                    </div>
+                    <div class="pq-blog-contain">
+                        <div class="pq-post-meta">
+                            <ul>
+                                <li class="pq-post-author" style="text-transform:none"><i class="fa fa-user"></i>We(e)</li>
+                                <li class="pq-post-meta">
+                                    <a @*href="#"*@><i class="fa fa-calendar"></i>January 2023</a>
+                                </li>
+                                <li class="pq-post-tag">
+                                    <a @*href="#"*@ style="text-transform:none"><i class="fa fa-tag"></i>Artificial Intelligence</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h2 class="pq-blog-single-title">
+                            The Rise Of AI
+                        </h2>
+                        <p>
+                            Artificial Intelligence (AI) has been rapidly advancing, revolutionizing numerous industries and
+                            transforming the way we live and work. As AI continues to gain prominence, concerns about the
+                            machines surpassing human intelligence and taking over the world, as depicted in movies like
+                            Terminator 3: Rise of the Machines, have surfaced. In this blog, we'll explore the rise of AI, its
+                            benefits, and discuss why the fear of machines taking over the world is largely unfounded.
+                        </p>
+                        <h2 class="pq-blog-single-title">Benefits Of AI</h2>
+                        <p>
+                            AI has already made significant positive contributions to various aspects of our lives. From
+                            personalized recommendations on streaming platforms to advancements in medical diagnostics, AI has enhanced efficiency and accuracy in many fields. Let's delve into some key benefits of AI:
+                        </p>
+                        <p>
+                            <span style="font-weight:bold;">Increased Efficiency: </span>
+                            AI-powered automation and machine learning algorithms have led to
+                            enhanced productivity and streamlined processes. Tasks that previously required substantial
+                            human effort can now be executed faster and more accurately by AI systems.
+                        </p>
+                        <p>
+                            <span style="font-weight:bold;">Improved Decision Making: </span>
+                            AI systems can analyze vast amounts of data, recognize patterns, and make informed decisions based on the insights generated. This capability has proven
+                            valuable in areas such as finance, healthcare, and logistics, where complex data analysis is
+                            essential
+                        </p>
+                        <p>
+                            <span style="font-weight:bold;">Enhanced Safety and Security: </span>
+                            AI technologies contribute to improved safety in various
+                            domains. For instance, autonomous vehicles equipped with AI can potentially reduce human
+                            errors and accidents on the roads. AI also plays a crucial role in cybersecurity, detecting and
+                            preventing malicious activities and safeguarding sensitive information.
+                        </p>
+                        <p>
+                            <span style="font-weight:bold;">Personalized Experiences: </span>
+                            AI enables personalization by understanding user preferences and
+                            behavior. From targeted advertisements to tailored content recommendations, AI algorithms
+                            enhance user experiences and provide customized solutions.
+                        </p>
+                        <h2 class="pq-blog-single-title">Is AI Replacing You At Work?</h2>
+                        <p>
+                            As AI continues to evolve, concerns regarding job displacement arise. It is true that certain tasks
+                            previously performed by humans can now be executed more efficiently by machines. However, the fear of widespread unemployment due to AI is often exaggerated. History has shown that
+                            technological advancements often create new job opportunities. While AI may replace some jobs, it also creates a demand for new roles in areas such as AI programming, data analysis, and
+                            machine learning engineering.
+                        </p>
+                        <p>
+                            Moreover, AI systems excel in tasks that require precision, efficiency, and processing large
+                            amounts of data. However, they still lack the creativity, emotional intelligence, and critical thinking
+                            abilities that are essential for many roles. Jobs that involve human interaction, complex problem- solving, and empathy are less susceptible to automation.
+                        </p>
+                        <h2 class="pq-blog-single-title">Skynet Is Still Fiction</h2>
+                        <p>
+                            The notion of machines taking over the world, as depicted in Terminator 3, is more science fiction
+                            than reality. While AI is advancing rapidly, we are far from developing a superintelligent system
+                            capable of independent thought and decision-making. The current state of AI technology revolves
+                            around narrow AI systems that excel at specific tasks but lack the general intelligence required
+                            for world domination.
+                        </p>
+                        <p>
+                            AI systems are designed and programmed by humans, and they operate within the boundaries
+                            set by their creators. They lack autonomy and self-awareness, limiting their ability to act
+                            independently. The fear of machines spontaneously developing a will to dominate humans is a
+                            misconception fueled by fictional narratives.
+                        </p>
+                        <p>
+                            Furthermore, the development and deployment of AI systems involve strict ethical guidelines and
+                            regulations. Researchers and policymakers emphasize responsible AI development to prevent
+                            unintended consequences and ensure that AI is aligned with human values.
+                        </p>
+                        <p>
+                            In conclusion, The rise of artificial intelligence brings forth immense potential for innovation and
+                            progress across various domains. AI has already demonstrated its ability to augment human
+                            capabilities and improve efficiency. While concerns about job displacement are valid, history has
+                            shown that new opportunities arise alongside technological advancements.
+                        </p>
+                        <p>
+                            The notion of machines taking over the world like Skynet in Terminator 3 remains in the realm of
+                            science fiction. Current AI systems lack the self-awareness and autonomy necessary for such a
+                            scenario to occur.
+
+                        </p>
+                        @*<div class="pq-blog-single-info">
+                        <h2 class="pq-blog-single-title">Provide Exclusive Solutions</h2>
+                        <p>
+                        It is a long established fact that a reader will be distracted by the readable
+                        content of a page when
+                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+                        normal distribution
+                        of letters, as opposed to using ‘Content here, content here’, making it look like
+                        readable English.
+                        </p>
+                        </div>*@
+                    </div>
+                </div>
+
+                <!--<div id="comments" class="pq-comment-area">
+                    <h3 class="comments-title">5 Comment</h3>
+                    <ol class="commentlist">
+                        <li class="comment even thread-even depth-1" id="li-comment-2">
+                            <div class="pq-comment-info">
+                                <div class="pq-comment-wrap">
+                                    <div class="pq-comment-avatar">
+                                        <img alt="" src="images/blog/blog-single/1.png" loading="lazy">
+                                    </div>
+                                    <div class="pq-comment-box">
+                                        <h5 class="title">Thomas Luis</h5>
+                                        <div class="pq-comment-metadata">
+                                        </div>-->
+                <!-- .comment-metadata -->
+                <!--<div class="comment-content">
+                    <p>
+                        Maecenas vitae urna sit amet purus accumsan tempus vel sed Proin
+                        consequat orci
+                        consequat, ultrices nisl ac, tempor magna Etiam ac arcu a orci
+                        aliquam pulvinar.
+                    </p>
+                </div>-->
+                <!-- .comment-content -->
+                <!--</div>--><!-- .comment-author -->
+                <!--<div class="reply">
+                    <a rel="nofollow" class="comment-reply-link" href="#" data-commentid="2"
+                       data-postid="7401" data-belowelement="div-comment-2"
+                       data-respondelement="respond" data-replyto="Reply to Thomas Luis"
+                       aria-label="Reply to Thomas Luis">Reply</a>
+                </div>-->
+                <!-- .reply -->
+                <!--</div>
+                    </div>
+                </li>-->
+                <!-- #comment-## -->
+                <!--<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-6">
+                    <div class="pq-comment-info">
+                        <div class="pq-comment-wrap">
+                            <div class="pq-comment-avatar">
+                                <img alt="" src="images/blog/blog-single/1.png" loading="lazy">
+                            </div>
+                            <div class="pq-comment-box">
+                                <h5 class="title">
+                                    <a href="#" rel="external nofollow ugc" class="url">
+                                        Situs Judi slot
+                                        bonus deposit
+                                    </a>
+                                </h5>
+                                <div class="pq-comment-metadata">
+
+                                </div>-->
+                <!-- .comment-metadata -->
+                <!--<div class="comment-content">
+                    <p>
+                        Thank you for the good writeup. It in fact was a amusement account
+                        it.<br>
+                        Look advanced to more added agreeable from you!<br>
+                        However, how could we communicate?
+                    </p>
+                </div>-->
+                <!-- .comment-content -->
+                <!--</div>--><!-- .comment-author -->
+                <!--<div class="reply">
+                    <a rel="nofollow" class="comment-reply-link" href="#" data-commentid="6"
+                       data-postid="7401" data-belowelement="div-comment-6"
+                       data-respondelement="respond"
+                       data-replyto="Reply to Situs Judi slot bonus deposit"
+                       aria-label="Reply to Situs Judi slot bonus deposit">Reply</a>
+                </div>-->
+                <!-- .reply -->
+                <!--</div>
+                    </div>
+                </li>-->
+                <!-- #comment-## -->
+                <!--<li class="comment even thread-even depth-1" id="li-comment-9">
+                    <div class="pq-comment-info">
+                        <div class="pq-comment-wrap">
+                            <div class="pq-comment-avatar">
+                                <img alt="" src="images/blog/blog-single/1.png" loading="lazy">
+                            </div>
+                            <div class="pq-comment-box">
+                                <h5 class="title">
+                                    <a href="#" rel="external nofollow ugc" class="url">Lorenza</a>
+                                </h5>
+                                <div class="pq-comment-metadata">
+
+                                </div>-->
+                <!-- .comment-metadata -->
+                <!--<div class="comment-content">
+                    <p>
+                        always i used to read smaller articles or reviews which also clear
+                        their motive,<br>
+                        and that is also happening with this article which I am reading
+                        here.
+                    </p>
+                </div>-->
+                <!-- .comment-content -->
+                <!--</div>--><!-- .comment-author -->
+                <!--<div class="reply">
+                    <a rel="nofollow" class="comment-reply-link" href="#" data-commentid="9"
+                       data-postid="7401" data-belowelement="div-comment-9"
+                       data-respondelement="respond" data-replyto="Reply to Lorenza"
+                       aria-label="Reply to Lorenza">Reply</a>
+                </div>-->
+                <!-- .reply -->
+                <!--</div>
+                    </div>
+                </li>-->
+                <!-- #comment-## -->
+                <!--<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-10">
+                    <div class="pq-comment-info">
+                        <div class="pq-comment-wrap">
+                            <div class="pq-comment-avatar">
+                                <img alt="" src="images/blog/blog-single/1.png" loading="lazy">
+                            </div>
+                            <div class="pq-comment-box">
+                                <h5 class="title">
+                                    <a href="#" rel="external nofollow ugc" class="url">Martha</a>
+                                </h5>
+                                <div class="pq-comment-metadata">
+
+                                </div>-->
+                <!-- .comment-metadata -->
+                <!--<div class="comment-content">
+                    <p>
+                        Great work! This is the type of information that are meant to be
+                        shared around the
+                        net.
+                    </p>
+                    <p>
+                        Shame on the seek engines for not positioning this publish upper!<br>
+                        Come on over and consult with my site . Thank you =)
+                    </p>
+                </div>-->
+                <!-- .comment-content -->
+                <!--</div>--><!-- .comment-author -->
+                <!--<div class="reply">
+                    <a rel="nofollow" class="comment-reply-link" href="#" data-commentid="10"
+                       data-postid="7401" data-belowelement="div-comment-10"
+                       data-respondelement="respond" data-replyto="Reply to Martha"
+                       aria-label="Reply to Martha">Reply</a>
+                </div>-->
+                <!-- .reply -->
+                <!--</div>
+                    </div>
+                </li>-->
+                <!-- #comment-## -->
+                <!--<li class="comment even thread-even depth-1" id="li-comment-13">
+                    <div class="pq-comment-info">
+                        <div class="pq-comment-wrap">
+                            <div class="pq-comment-avatar">
+                                <img alt="" src="images/blog/blog-single/1.png" loading="lazy">
+                            </div>
+                            <div class="pq-comment-box">
+                                <h5 class="title">
+                                    <a href="#" rel="external nofollow ugc" class="url">
+                                        Much Photos
+                                        Watch
+                                    </a>
+                                </h5>
+                                <div class="pq-comment-metadata">
+
+                                </div>-->
+                <!-- .comment-metadata -->
+                <!--<div class="comment-content">
+                    <p>How is the COVID situation over there?</p>
+                </div>-->
+                <!-- .comment-content -->
+                <!--</div>--><!-- .comment-author -->
+                <!--<div class="reply">
+                    <a rel="nofollow" class="comment-reply-link" href="#" data-commentid="13"
+                       data-postid="7401" data-belowelement="div-comment-13"
+                       data-respondelement="respond" data-replyto="Reply to Much Photos Watch"
+                       aria-label="Reply to Much Photos Watch">Reply</a>
+                </div>-->
+                <!-- .reply -->
+                <!--</div>
+                    </div>
+                </li>-->
+                <!-- #comment-## -->
+                <!--</ol>--><!-- .commentlist -->
+                <!--<div class="comment-respond">
+                    <h3 id="reply-title" class="comment-reply-title mt-4">Write a Reply or Comment </h3>
+                    <form method="post" class="comment-form pq-applyform" novalidate="">
+                        <p class="comment-notes">
+                            <span>Your email address will not be published.</span> <span class="required-field-message" aria-hidden="true">
+                                Required fields are marked
+                                <span class="required" aria-hidden="true">*</span>
+                            </span>
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <input id="first-name" class="name-field" name="author" type="text"
+                                       placeholder=" Enter Name" required="">
+                            </div>
+                            <div class="col-lg-4">
+                                <input id="e-mail" class="e-mail-field" name="email" type="text"
+                                       placeholder=" Enter Email" required="">
+                            </div>
+                            <div class="col-lg-4">
+                                <input id="url" class="url-field" name="url" type="text" placeholder="Enter Url">
+                            </div>
+                            <div class="col-lg-12">
+                                <textarea id="message" name="comment" cols="60" rows="6"
+                                          placeholder=" Enter Your Comment"></textarea>
+                            </div>
+                        </div>
+                        <a class="pq-button mb-0 form-btn">Post comment</a>
+                    </form>
+                </div>-->
+                <!-- #respond -->
+                <!--</div>-->
+            </div>
+            <div class="col-lg-4 mt-4 mt-lg-0">
+                <div id="secondary" class="sidebar widget-area">
+                    @*<div id="search-2" class="widget widget_search">
+                    <form role="search" method="get" class="search-form" action="#">
+                    <label>
+                    <span class="screen-reader-text">Search for:</span>
+                    <input type="search" class="search-field mb-0" placeholder="Search …" value=""
+                    name="s">
+                    </label>
+                    <button type="submit" class="search-submit">
+                    <span class="screen-reader-text">Search</span>
+                    </button>
+                    </form>
+                    </div>*@
+                    <div class="pq-widget-menu widget">
+                        <h2 class="widget-title">Recent Post</h2>
+                        <div class="pq-footer-recent-post">
+                            <div class="pq-footer-recent-post-media">
+                                <a href="~/Blogs/TheBestEngineers">
+                                    <img src="~/Content/WebsiteContent/images/engineers.jpg" style="height: 70px;" alt="">
+                                </a>
+                            </div>
+                            <div class="pq-footer-recent-post-info">
+                                <h6>
+                                    <a href="~/Blogs/TheBestEngineers">
+                                        The Best Engineers Do Not Build
+                                        The Best Technologies
+                                    </a>
+                                </h6>
+                                <a @*href="#"*@ class="pq-post-date">April <span>14</span>, 2023 </a>
+                            </div>
+                        </div>
+                        <div class="pq-footer-recent-post">
+                            <div class="pq-footer-recent-post-media">
+                                <a href="~/Blogs/KnockKnock">
+                                    <img src="~/Content/WebsiteContent/images/addicted.jpg" style="height: 70px;" alt="">
+                                </a>
+                            </div>
+                            <div class="pq-footer-recent-post-info">
+                                <h6>
+                                    <a href="~/Blogs/KnockKnock">
+                                        Your Phone Is Not What You Are
+                                        Addicted To
+                                    </a>
+                                </h6>
+                                <a @*href="#"*@ class="pq-post-date">Feburary <span>10</span>, 2023 </a>
+                            </div>
+                        </div>
+                        <div class="pq-footer-recent-post">
+                            <div class="pq-footer-recent-post-media">
+                                <a href="~/Blogs/KnockKnock">
+                                    <img src="~/Content/WebsiteContent/images/knock.jpg" style="height: 70px;" alt="">
+                                </a>
+                            </div>
+                            <div class="pq-footer-recent-post-info">
+                                <h6>
+                                    <a href="~/Blogs/KnockKnock">
+                                        Knock Knock, Who Is Inside?
+                                    </a>
+                                </h6>
+                                <a @*href="#"*@ class="pq-post-date">Feburary <span>04</span>, 2023 </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="categories-2" class="widget widget_categories">
+                        <h2 class="widget-title">Categories</h2>
+                        <ul>
+                            <li>
+                                <a href="~/Blogs/KnockKnock">Cloud Computing</a>
+                            </li>
+                            <li>
+                                <a href="~/Blogs/KnockKnock">Cyber Security</a>
+                            </li>
+                            <li>
+                                <a href="~/Blogs/InterprofessionalCollaboration">Productivity</a>
+                            </li>
+                            <li>
+                                <a href="~/Blogs/ArtificialIntelligence">Artificial Intelligence</a>
+                            </li>
+                            <li>
+                                <a href="~/Blogs/CryptoCurrency">Blockchain</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tag_cloud-2" class="widget widget_tag_cloud">
+                        <h2 class="widget-title">Tags</h2>
+                        <div class="tagcloud">
+                            <a href="~/Blogs/AddictedTo" class="tag-cloud-link">
+                                Cloud Computing<span class="tag-link-count"> (0)</span>
+                            </a>
+                            <a href="~/Blogs/KnockKnock" class="tag-cloud-link">
+                                Cyber Security<span class="tag-link-count"> (2)</span>
+                            </a>
+                            <a href="~/Blogs/ArtificialIntelligence" class="tag-cloud-link">
+                                Artificial Intelligence<span class="tag-link-count"> (1)</span>
+                            </a>
+                            <a href="~/Blogs/InterprofessionalCollaboration" class="tag-cloud-link">
+                                Productivity<span class="tag-link-count">
+                                    (1)
+                                </span>
+                            </a>
+                            <a href="~/Blogs/CryptoCurrency" class="tag-cloud-link">
+                                Blockchain<span class="tag-link-count"> (1)</span>
+                            </a>
+                        </div>
+                    </div>
+                    @*<div id="meta-2" class="widget widget_meta">
+                    <h2 class="widget-title">Meta</h2>
+                    <ul>
+                    <li><a href="#">Log in</a></li>
+                    <li><a href="#">Entries feed</a></li>
+                    <li><a href="#">Comments feed</a></li>
+                    <li><a href="#">WordPress.org</a></li>
+                    </ul>
+                    </div>*@
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Blog-Single End-->

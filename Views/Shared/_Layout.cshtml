@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    @* <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WeeBtpWebsite</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WeeBtpWebsite.styles.css" asp-append-version="true" /> *@
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="font-weight:bold">Powering Technology Solutions</title>
+    <!--favicon icon-->
+    <link rel="apple-touch-icon" sizes="40x40" href="~/Content/WebsiteContent/images/weebtpfavicon40x40.png">
+    @*<link rel="icon" type="image/png" sizes="32x32" href="~/Content/WebsiteContent/Icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/Content/WebsiteContent/Icon/favicon-16x16.png">*@
+    <link rel="icon" type="image/png" sizes="40x40" href="~/Content/WebsiteContent/images/weebtpfavicon40x40.png">
+    <link rel="manifest" href="~/Content/WebsiteContent/Icon/site.webmanifest">
+    @*<link rel="shortcut icon" href="~/Content/WebsiteContent/images/favicon.ico">*@
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="~/Content/WebsiteContent/css/bootstrap.min.css">
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="~/Content/WebsiteContent/rev/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/WebsiteContent/rev/fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/WebsiteContent/rev/css/rs6.css">
+    <!--owl carousel-->
+    <link rel="stylesheet" href="~/Content/WebsiteContent/css/owl.carousel.min.css">
+    <!--Progressbar CSS-->
+    <link rel="stylesheet" href="~/Content/WebsiteContent/css/progressbar.css">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="~/Content/WebsiteContent/css/animations.min.css">
+    <!--icon css -->
+    <link rel="stylesheet" href="~/Content/WebsiteContent/fonts/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="~/Content/WebsiteContent/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="~/Content/WebsiteContent/css/ionicons.min.css">
+    <link rel="stylesheet" href="~/Content/WebsiteContent/fonts/themify-icons/themify-icons.css">
+    <!--style css-->
+    <link rel="stylesheet" href="~/Content/WebsiteContent/css/style.css">
+    <!--responsive css-->
+    <link rel="stylesheet" href="~/Content/WebsiteContent/css/responsive.css">
+</head>
+<body>
+    @* <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">WeeBtpWebsite</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> *@
+    <!-- Loading Start-->
+    <div id="pq-loading">
+        <div id="pq-loading-center">
+            @*<img src="~/Content/WebsiteContent/images/logo2.png" alt="loading">*@
+            <img src="~/Content/WebsiteContent/images/We(e)BTPv2.0.png" style="width:200px;height:200px;" alt="loading">
+        </div>
+    </div>
+    <!--Loading End -->
+    @* <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div> *@
+    @RenderBody()
+    <!--Footer Start-->
+    <footer id="pq-footer" class="style-1">
+        <div class="pq-footer-style-1">
+            <div class="pq-footer-top">
+                <div class="pq-footer-bottom-list">
+                    <div class="container">
+                        <div class="row g-0">
+                            <div class="col-lg-4 p-0">
+                                <div class="pq-footer-items">
+                                    <i class="ti-location-pin"></i>
+                                    <div class="pq-footer-items-info">
+                                        <h4>Address</h4>
+                                        <span>
+                                            276 5th Avenue Suite 704
+                                            New York, NY 10001
+                                            United States.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 p-0">
+                                <div class="pq-footer-items">
+                                    <i class="ti-mobile"></i>
+                                    <div class="pq-footer-items-info">
+                                        <h4>call Us On</h4>
+                                        <a href="tel:+8007816632">
+                                            <span>(800)781-6632</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 p-0">
+                                <div class="pq-footer-items border-0">
+                                    <i class="ti-email"></i>
+                                    <div class="pq-footer-items-info">
+                                        <h4>Email Us</h4>
+                                        <a href="mailto:initiative@weebtp.com"><span>initiative@weebtp.com</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-md-6">
+                            <div class="widget">
+                                <img src="~/Content/WebsiteContent/images/We(e)BTPv2.0.png" class="pq-footer-logo" alt="gym-footer-logo">
+                                <p style="font-weight:bold;">
+                                    Connect With Us
+                                </p>
+                                <div class="pq-footer-social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/weebtp" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/company/weebtp/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                                        <li><a href="https://twitter.com/weebtp" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3  col-md-6">
+                            <div class="widget">
+                                <h4 class="footer-title">Our Services</h4>
+                                <div class="menu-useful-service-links-container">
+                                    <ul id="menu-useful-service-links" class="menu">
+                                        <li>
+                                            <a href="~/OurServices/WeeCodeIGNITE">WeeCodeIGNITE</a>
+                                        </li>
+                                        <li>
+                                            <a href="~/OurServices/WeeSecurity360">WeeSecurity360</a>
+                                        </li>
+                                        <li>
+                                            <a href="~/OurServices/WeeCloudSPHERE">WeeCloudSPHERE</a>
+                                        </li>
+                                        <li>
+                                            <a href="~/OurServices/WeePraaS">WeePraaS</a>
+                                        </li>
+                                        @* <li>
+                                            <a href="~/Home/CyberSecurity">Cyber Security</a>
+                                        </li> *@
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3  col-md-6">
+                            <div class="widget">
+                                <h4 class="footer-title"></h4>
+                                <br />
+                                <div class="menu-useful-link-container">
+                                    <ul id="menu-usefull-link" class="menu">
+                                        <li>
+                                            <a href="~/OurServices/WeeNextgenFLOW">WeeNextgenFLOW</a>
+                                        </li>
+                                        <li>
+                                            <a href="~/OurServices/WeeBlockCENTRAL">WeeBlockCENTRAL</a>
+                                        </li>
+                                        <li>
+                                            <a href="~/OurServices/WeeDatastAIsis">WeeDatastAIsis</a>
+                                        </li>
+                                        @* <li>
+                                            <a href="~/Home/Office365Development">Office 365 Development</a>
+                                        </li>
+                                        <li>
+                                            <a href="~/Home/MobileAppDevelopment">Mobile App Development</a>
+                                        </li> *@
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3  col-md-6">
+                            <div class="pq-widget-menu widget">
+                                <h4 class="footer-title">Recent post</h4>
+                                <div class="pq-footer-recent-post">
+                                    <div class="pq-footer-recent-post-media">
+                                        <a href="~/Blogs/TheBestEngineers">
+                                            <img src="~/Content/WebsiteContent/images/engineers.jpg" style="height:70px;" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="pq-footer-recent-post-info">
+                                        <h6>
+                                            <a href="~/Blogs/TheBestEngineers">
+                                                The Best Engineers Do Not Build The
+                                                &amp; Best Technologies
+                                            </a>
+                                        </h6>
+                                        <a href="~/Blogs/TheBestEngineers"
+                                           class="pq-post-date">April <span>14</span>, 2023 </a>
+                                    </div>
+                                </div>
+                                <div class="pq-footer-recent-post">
+                                    <div class="pq-footer-recent-post-media">
+                                        <a href="~/Blogs/AddictedTo">
+                                            <img src="~/Content/WebsiteContent/images/addicted.jpg" style="height:70px;" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="pq-footer-recent-post-info">
+                                        <h6>
+                                            <a href="~/Blogs/AddictedTo">
+                                                Your Phone Is Not What You Are
+                                                &amp;  Addicted To
+                                            </a>
+                                        </h6>
+                                        <a href="~/Blogs/AddictedTo"
+                                           class="pq-post-date">Feburary <span>10</span>, 2023 </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pq-copyright-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <span class="pq-copyright">
+                                <a target="_blank" href="#">
+                                    Copyright 2023 We(e) Collective.All Rights Reserved.
+                                </a>
+                            </span>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="pq-footer-link">
+                                <ul>
+                                    <li><a href="~/Home/AboutUs">About Us</a></li>
+                                    <li><a href="~/Home/TermOfUse">Term Of Use</a></li>
+                                    <li><a href="~/Home/PrivacyPolicy">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer End-->
+    <!--Back to top Start-->
+    <div id="back-to-top">
+        <a class="top" id="#top" href="#"> <i class="ion-ios-arrow-up"></i> </a>
+    </div>
+    <!--Back to top End-->
+    <!--Jquery js-->
+    <script>
+        function getCurrentTime() {
+            const now = new Date();
+            let hours = now.getHours();
+            const minutes = now.getMinutes();
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+
+            // Remove leading zero from hours if it's a single digit
+            if (hours < 10) {
+                hours = String(hours).replace(/^0/, ''); // Remove leading zero
+            }
+
+            // Convert hours from 24-hour format to 12-hour format
+            if (hours > 12) {
+                hours -= 12;
+            }
+
+            const currentTime = "It's " + `${hours}:${minutes < 10 ? '0' : ''}${minutes} ${ampm}`;
+            return currentTime;
+        }
+
+        function updateClock() {
+            const currentTime = getCurrentTime();
+            document.getElementById('time').textContent = currentTime;
+        }
+
+        // Update the clock initially and then every second
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
+    <script src="~/Content/WebsiteContent/js/jquery.min.js"></script>
+    <!--Bootstrap js-->
+    <script src="~/Content/WebsiteContent/js/bootstrap.min.js"></script>
+    <!--Owl Carousel js-->
+    <script src="~/Content/WebsiteContent/js/owl.carousel.min.js"></script>
+    <!--Progressbar js-->
+    <script src="~/Content/WebsiteContent/js/progressbar.js"></script>
+    <!--Isotope js-->
+    <script src="~/Content/WebsiteContent/js/isotope.pkgd.min.js"></script>
+    <!--Counter js -->
+    <script src="~/Content/WebsiteContent/js/jquery.countTo.min.js"></script>
+    <!--Magnefic Popup js -->
+    <script src="~/Content/WebsiteContent/js/jquery.magnific-popup.min.js"></script>
+    <!--Animation JS -->
+    <script src="~/Content/WebsiteContent/js/wow.min.js"></script>
+    <!--Rev Slider js-->
+    <script src="~/Content/WebsiteContent/rev/js/rbtools.min.js"></script>
+    <script src="~/Content/WebsiteContent/rev/js/rs6.min.js"></script>
+    <script src="~/Content/WebsiteContent/js/rev-custom.js"></script>
+    <!--Custom js-->
+    <script src="~/Content/WebsiteContent/js/rough-script.js"></script>
+    <script src="~/Content/WebsiteContent/js/rough-notation.iife.js"></script>
+    <script src="~/Content/WebsiteContent/js/rough-custom.js"></script>
+    <script src="~/Content/WebsiteContent/js/custom.js"></script>
+    @* <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - WeeBtpWebsite - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer> *@
+    @* <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false) *@
+</body>
+</html>

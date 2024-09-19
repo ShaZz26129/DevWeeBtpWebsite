@@ -1,0 +1,568 @@
+﻿
+@{
+    ViewData["Title"] = "Education";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!--Header Start-->
+<header id="pq-header" class="pq-header-default">
+    <div class="pq-top-header">
+        <div class="container">
+            <div class="row flex-row-reverse">
+                <div class="col-md-6 text-right">
+                    <div class="pq-header-social text-right">
+                        <ul>
+                            <li><a href="https://www.facebook.com/weebtp" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/weebtp/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://twitter.com/weebtp" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pq-header-contact ">
+                        <ul>
+                            <li>
+                                <a href="tel:+8007816632"><i class="fas fa-phone-flip"></i><span>(800)781-6632</span></a>
+                            </li>
+                            <li>
+                                <a href="mailto:initiative@weebtp.com"><i class="fas fa-envelope"></i><span>initiative@weebtp.com</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pq-bottom-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="~/Home/Home">
+                            <img class="img-fluid logo" src="~/Content/WebsiteContent/images/We(e)BTPv2.0.png" alt="We(e)">
+                        </a>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div id="pq-menu-contain" class="pq-menu-contain">
+                                <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                                    @*<li class="menu-item current-menu-item manu-item-has-children">
+                                    <a href="#">Home</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                    <ul class="sub-menu">
+                                    <li class="menu-item">
+                                    <a href="main-home.html" aria-current="page">Main Home</a>
+                                    </li>
+                                    <li class="menu-item current-menu-item">
+                                    <a href="home-modern.html">home modern</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="start-up-home.html">Start Up Home</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="it-agency.html">IT Agency</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="software-company.html">Software Company</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="home-classic.html">home classic</a>
+                                    </li>
+                                    </ul>
+                                    </li>*@
+                                    <li class="menu-item">
+                                        <a href="~/Home/OurServices">Services</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeCodeIGNITE">We(e) CodeIGNITE</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeSecurity360">We(e) Security360</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeCloudSPHERE">We(e) CloudSPHERE</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeNextgenFLOW">We(e) NextgenFLOW</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeBlockCENTRAL">We(e) BlockCENTRAL</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeDatastAIsis">We(e) DatastAIsis</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeePraaS">We(e) PraaS</a>
+                                            </li>
+                                            @*<li class="menu-item">
+                                            <a href="~/Home/DatabaseDevelopment">Database Development</a>
+                                            </li>
+                                            <li class="menu-item">
+                                            <a href="~/Home/DataAnalysisAutomation">Analysis & Automation</a>
+                                            </li>
+                                            <li class="menu-item">
+                                            <a href="~/Home/Office365Development">Office365 Development</a>
+                                            </li>*@
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item current-menu-item">
+                                        <a @*href="#"*@>Industries</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Finance">Finance</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Healthcare">Healthcare</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Retail">Retail</a>
+                                            </li>
+                                            <li class="menu-item current-menu-item">
+                                                <a href="~/Industries/Education">Education</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/RealEstate">Real Estate</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Travel">Travel</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Other">Others</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="~/Home/Blog">Blog</a>@*<i class="fa fa-chevron-down pq-submenu-icon"></i>*@
+                                        @*<ul class="sub-menu">
+                                        <li class="menu-item menu-item-has-children">
+                                        <a href="#">Grid Style</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                        <li class="menu-item">
+                                        <a href="one-column-blog.html">One Column Blog</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="two-column-blog.html">Two Column Blog</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="three-column-blog.html">Three Column Blog</a>
+                                        </li>
+                                        </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children">
+                                        <a href="#">Blog Sidebar</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                        <li class="menu-item">
+                                        <a href="blog-right-sidebar.html">Blog Right Sidebar</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="blog-left-sidebar.html">Blog Left Sidebar</a>
+                                        </li>
+                                        </ul>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="app-promotes-sales-profits-in-it-solutions.html">
+                                        Blog
+                                        Single
+                                        </a>
+                                        </li>
+                                        </ul>*@
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="~/Home/ContactUs">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pq-menu-search-block">
+                            @*<a href="javascript:void(0)" id="pq-seacrh-btn"><i class="fa fa-search"></i></a>
+                            <div class="pq-search-form">
+
+                            <form role="search" method="get" class="search-form"
+                            action="https://techtrix.peacefulqode.com/">
+                            <label>
+                            <span class="screen-reader-text">Search for:</span>
+                            <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+                            </label>
+                            <button type="submit" class="search-submit">
+                            <span class="screen-reader-text">Search</span>
+                            </button>
+                            </form>
+                            </div>*@
+                        </div>
+                        <a href="~/Home/FreeQuote" class="pq-button">
+                            <div class="pq-button-block">
+
+                                <span class="pq-button-text">Free Quote</span>
+                            </div>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Header End-->
+<!--Breadcrumb Start-->
+<div class="pq-breadcrumb pq-bg-dark pq-bg-img-2">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <nav aria-label="breadcrumb">
+                    <div class="pq-breadcrumb-title">
+                        <h1>Education</h1>
+                    </div>
+                    <div class="pq-breadcrumb-container">
+                        <ol class="breadcrumb align-items-center">
+                            <li class="breadcrumb-item">
+                                <a>
+                                    We(e) helps schools of all levels capitalize on the potentials of business technologies to
+                                    overcome their challenges and maximize potentials
+                                </a>
+                            </li>
+                            @*<li class="breadcrumb-item active">Education</li>*@
+                        </ol>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Breadcrumb End-->
+<!--3 Column Start-->
+<section class="pq-pb-190">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="pq-grid-container">
+                    <div class="pq-filters">
+                        <div class="filters pq-filter-button-group">
+                            <ul>
+                                <li class="active pq-filter-btn" data-filter="*">All</li>
+                                <li class="pq-filter-btn" data-filter=".14">At a Glance</li>
+                                <li class="pq-filter-btn" data-filter=".5">Challenges</li>
+                                <li class="pq-filter-btn" data-filter=".15" style="text-transform:none;">HOW We(e) CAN HELP</li>
+                                @*<li class="pq-filter-btn" data-filter=".8">Technology</li>*@
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pq-grid " data-next_items="3" data-initial_items="6">
+                        <div class="pq-grid-item pq-filter-items  pq-crop-img  14 ">
+                            <div class="row mt-4  border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/education.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <h2 class="pq-about-title mt-4 mt-lg-0">
+                                        <a href="#">
+                                            Education Industry At A Glance
+                                        </a>
+                                    </h2>
+                                    <p class="pq-description mb-0">
+                                        The education industry is a vast and rapidly growing sector that
+                                        encompasses a wide range of activities and services aimed at providing
+                                        individuals with knowledge, skills, and training to pursue their personal and
+                                        professional goals. From primary and secondary education to higher
+                                        education, vocational training, and lifelong learning, the education industry
+                                        plays a critical role in shaping society and preparing individuals for success
+                                        in the modern world.
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        The education industry can be broadly divided into four main categories:
+                                        primary and secondary education, higher education, vocational education, and lifelong learning. Each of these categories has its unique
+                                        characteristics, challenges, and opportunities.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+                        </div>
+
+                        <div class="pq-grid-item pq-filter-items  pq-crop-img  5 ">
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/industry.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <h2 class="pq-about-title mt-4 mt-lg-0">
+                                        <a href="#">
+                                            Education Industry Challenges
+
+                                        </a>
+                                    </h2>
+                                    <p class="pq-description mb-0">
+                                        The education industry is facing significant challenges in today's digital
+                                        age. With an increasing demand for technology-driven solutions and
+                                        personalized learning experiences, traditional educational systems are
+                                        struggling to keep up with the pace of change.
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        Let's take a closer look at some of the challenges facing the education
+                                        industry.
+                                    </p>
+                                    <p class="pq-description mb-0" style="font-weight:bold">Funding</p>
+                                    <p class="pq-description mb-0">
+                                        One of the biggest challenges facing the education industry is funding. With state and federal budgets constantly being cut, schools and
+                                        universities are struggling to provide quality education while balancing
+                                        their budgets.
+                                    </p>
+                                    <p class="pq-description mb-0" style="font-weight:bold">
+                                        Technology Integration
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        Technology has rapidly transformed the way we learn, but integrating
+                                        new technologies can be difficult for educational institutions.
+                                    </p>
+                                    <p class="pq-description mb-0" style="font-weight:bold">
+                                        Access to technology
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        Not all students have access to the latest technology at home or at
+                                        school. This can create a digital divide, where some students have a
+                                        significant advantage over others.
+
+                                    </p>
+                                    <p class="pq-description mb-0" style="font-weight:bold">Data privacy and security</p>
+                                    <p class="pq-description mb-0">
+                                        With the increasing use of technology in education, there is a growing
+                                        concern about data privacy and security. As students and teachers use
+                                        various online tools and platforms to collaborate and learn, there is a
+                                        risk of sensitive information being exposed or hacked.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+                        </div>
+
+                        <div class="pq-grid-item pq-filter-items  pq-crop-img  15 ">
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/challenges.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <h2 class="pq-about-title mt-4 mt-lg-0">
+                                        <a href="#" style="text-transform:none;">
+                                            How We(e) Can Help The Education
+                                            Industry Meet Their Challenges
+                                        </a>
+                                    </h2>
+                                    <p class="pq-description mb-0">
+                                        The education industry is facing significant challenges in today's digital age. With
+                                        an increasing demand for technology-driven solutions and personalized learning
+                                        experiences, traditional educational systems are struggling to keep up with the
+                                        pace of change. That's where We(e) come in.
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        Let’s explore how We(e) can help.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/development.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    @*<h2 class="pq-about-title mt-4 mt-lg-0">
+                                    <a href="about-us.html">
+                                    Benefits of Our IPC Model
+                                    </a>
+                                    </h2>*@
+                                    <p class="pq-description mb-0" style="font-weight:bold">
+                                        Software Development
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        By developing custom software solutions that are tailored to their
+                                        specific needs, from online learning platforms to administrative
+                                        software at affordable cost, We(e) can help educational institutions
+                                        streamline their operations, reduce costs, and improve student
+                                        outcomes.
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        These solutions can help educational institutions integrate new
+                                        technologies, and expand technology access to students to bridge the
+                                        digital divide.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/cybersceurity3.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    @*<h2 class="pq-about-title mt-4 mt-lg-0">
+                                    <a href="about-us.html">
+                                    Streamlined Model To Pass On
+                                    Cost Savings To Our Customers
+                                    </a>
+                                    </h2>*@
+                                    <p class="pq-description mb-0" style="font-weight:bold">
+                                        Cyber Security
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        As the volume of digital data grows, data breaches can be costly, not
+                                        only in terms of financial losses but also in terms of damage to
+                                        reputation.
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        We(e) can help educational institutions ensure that they have the
+                                        necessary data security measures in place. Cyber security services can
+                                        include everything from vulnerability assessments to penetration testing
+                                        and the implementation of security protocols.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/cloudsolution.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    @*<h2 class="pq-about-title mt-4 mt-lg-0">
+                                    <a href="about-us.html">Join Us on the Path to Success</a>
+                                    </h2>*@
+                                    <p class="pq-description mb-0" style="font-weight:bold">
+                                        Cloud Solutions
+
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        With the help of We(e), educational institutions can migrate their data
+                                        and applications to the cloud, allowing them to access them from
+                                        anywhere in the world.
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        This is particularly important in today's era of remote learning, where
+                                        students and teachers need to be able to access educational resources
+                                        from anywhere at any time.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/blockchain3.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    @*<h2 class="pq-about-title mt-4 mt-lg-0">
+                                    <a href="about-us.html">
+                                    Streamlined Model To Pass On
+                                    Cost Savings To Our Customers
+                                    </a>
+                                    </h2>*@
+                                    <p class="pq-description mb-0" style="font-weight:bold">
+                                        Blockchain Solutions
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        Blockchain technology has the potential to revolutionize the education
+                                        industry by providing a secure, transparent, and decentralized platform
+                                        for storing educational credentials.
+
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        By leveraging blockchain technology, We(e) can help educational
+                                        institutions create tamper-proof records of student achievements, which
+                                        can be verified by employers and other organizations.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/dataanalysis4.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    @*<h2 class="pq-about-title mt-4 mt-lg-0">
+                                    <a href="about-us.html">Join Us on the Path to Success</a>
+                                    </h2>*@
+                                    <p class="pq-description mb-0" style="font-weight:bold">
+                                        Data Analysis
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        By analyzing data from a variety of sources, including student
+                                        performance data, enrollment data, and demographic data, educational
+                                        institutions can gain insights into student behavior and performance, which can be used to improve learning outcomes.
+                                    </p>
+                                    <p>
+                                        With the help of We(e)’s data analysis service, educational institutions
+                                        can identify at-risk students and provide them with targeted support, leading to improved retention rates and higher graduation rates.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/automation.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="pq-description mb-0" style="font-weight:bold">
+                                        Automation
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        Automation is becoming increasingly important in the education
+                                        industry, as it allows educational institutions to streamline their
+                                        administrative processes and reduce costs.
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        With the help of We(e), educational institutions can automate certain
+                                        tasks such as scheduling, and record-keeping, freeing up staff time for
+                                        more important tasks such as teaching and student support.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/erp.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    @*<h2 class="pq-about-title mt-4 mt-lg-0">
+                                    <a href="about-us.html">Join Us on the Path to Success</a>
+                                    </h2>*@
+                                    <p class="pq-description mb-0" style="font-weight:bold">
+                                        Office 365 Solutions
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        By developing custom Office 365 solutions,We(e) can help educational
+                                        institutions to improve communication and collaboration, streamline
+                                        workflows, and reduce costs.
+                                    </p>
+                                    <p class="pq-description mb-0">This can be especially important in a remote learning environment, where students and teachers need to be able to collaborate online.</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--3 Column End-->

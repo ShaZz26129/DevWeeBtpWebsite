@@ -1,0 +1,368 @@
+﻿
+@{
+    ViewData["Title"] = "AboutUs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!--Header Start-->
+<header id="pq-header" class="pq-header-default">
+    <div class="pq-top-header">
+        <div class="container">
+            <div class="row flex-row-reverse">
+                <div class="col-md-6 text-right">
+                    <div class="pq-header-social text-right">
+                        <ul>
+                            <li><a href="https://www.facebook.com/weebtp" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/weebtp/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://twitter.com/weebtp" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pq-header-contact ">
+                        <ul>
+                            <li>
+                                <a href="tel:+8007816632"><i class="fas fa-phone-flip"></i><span>(800)781-6632</span></a>
+                            </li>
+                            <li>
+                                <a href="mailto:initiative@weebtp.com"><i class="fas fa-envelope"></i><span>initiative@weebtp.com</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pq-bottom-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="~/Home/Home">
+                            <img class="img-fluid logo" src="~/Content/WebsiteContent/images/We(e)BTPv2.0.png" alt="We(e)">
+                        </a>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div id="pq-menu-contain" class="pq-menu-contain">
+                                <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                                    @*<li class="menu-item current-menu-item manu-item-has-children">
+                                    <a href="#">Home</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                    <ul class="sub-menu">
+                                    <li class="menu-item">
+                                    <a href="main-home.html" aria-current="page">Main Home</a>
+                                    </li>
+                                    <li class="menu-item current-menu-item">
+                                    <a href="home-modern.html">home modern</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="start-up-home.html">Start Up Home</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="it-agency.html">IT Agency</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="software-company.html">Software Company</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="home-classic.html">home classic</a>
+                                    </li>
+                                    </ul>
+                                    </li>*@
+                                    <li class="menu-item">
+                                        <a href="~/Home/OurServices">Services</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeCodeIGNITE">We(e) CodeIGNITE</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeSecurity360">We(e) Security360</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeCloudSPHERE">We(e) CloudSPHERE</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeNextgenFLOW">We(e) NextgenFLOW</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeBlockCENTRAL">We(e) BlockCENTRAL</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeDatastAIsis">We(e) DatastAIsis</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeePraaS">We(e) PraaS</a>
+                                            </li>
+                                            @*<li class="menu-item">
+                                            <a href="~/Home/DatabaseDevelopment">Database Development</a>
+                                            </li>
+                                            <li class="menu-item">
+                                            <a href="~/Home/DataAnalysisAutomation">Analysis & Automation</a>
+                                            </li>
+                                            <li class="menu-item">
+                                            <a href="~/Home/Office365Development">Office365 Development</a>
+                                            </li>*@
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a @*href="#"*@>Industries</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Finance">Finance</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Healthcare">Healthcare</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Retail">Retail</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Education">Education</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/RealEstate">Real Estate</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Travel">Travel</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Other">Others</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="~/Home/Blog">Blog</a>@*<i class="fa fa-chevron-down pq-submenu-icon"></i>*@
+                                        @*<ul class="sub-menu">
+                                        <li class="menu-item menu-item-has-children">
+                                        <a href="#">Grid Style</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                        <li class="menu-item">
+                                        <a href="one-column-blog.html">One Column Blog</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="two-column-blog.html">Two Column Blog</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="three-column-blog.html">Three Column Blog</a>
+                                        </li>
+                                        </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children">
+                                        <a href="#">Blog Sidebar</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                        <li class="menu-item">
+                                        <a href="blog-right-sidebar.html">Blog Right Sidebar</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="blog-left-sidebar.html">Blog Left Sidebar</a>
+                                        </li>
+                                        </ul>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="app-promotes-sales-profits-in-it-solutions.html">
+                                        Blog
+                                        Single
+                                        </a>
+                                        </li>
+                                        </ul>*@
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="~/Home/ContactUs">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pq-menu-search-block">
+                            @*<a href="javascript:void(0)" id="pq-seacrh-btn"><i class="fa fa-search"></i></a>
+                            <div class="pq-search-form">
+
+                            <form role="search" method="get" class="search-form"
+                            action="https://techtrix.peacefulqode.com/"
+                            <label>
+                            <span class="screen-reader-text">Search for:</span>
+                            <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+                            </label>
+                            <button type="submit" class="search-submit">
+                            <span class="screen-reader-text">Search</span>
+                            </button>
+                            </form>
+                            </div>*@
+                        </div>
+                        <a href="~/Home/FreeQuote" class="pq-button">
+                            <div class="pq-button-block">
+
+                                <span class="pq-button-text">Free Quote</span>
+                            </div>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Header End-->
+<!--Breadcrumb Start-->
+<div class="pq-breadcrumb pq-bg-dark pq-bg-img-2">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <nav aria-label="breadcrumb">
+                    <div class="pq-breadcrumb-title">
+                        <h1>About Us</h1>
+                    </div>
+                    <div class="pq-breadcrumb-container">
+                        <ol class="breadcrumb align-items-center">
+                            <li class="breadcrumb-item">
+                                <a href="~/Home/Home"><i class="fa fa-home me-2"></i>Home</a>
+                            </li>
+                            <li class="breadcrumb-item active">About Us</li>
+                        </ol>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Breadcrumb End-->
+<!--Software Start-->
+<section class="pq-pb-190">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row mt-4 border-0">
+                    <div class="col-lg-6">
+                        <img src="~/Content/WebsiteContent/images/efficiency.jpg" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="pq-about-title mt-4 mt-lg-0">
+                            <a href="~/Home/AboutUs">
+                                Delivering Innovative Business
+                                Technology Solutions
+                            </a>
+                        </h2>
+                        <p class="pq-description mb-0 mt-4">
+                            Welcome to We(e) Business Technology Partners, a forward-thinking
+                            technology solutions firm dedicated to inter-professional collaboration (IPC). Founded by experts across computer technology, and business, we recognize the power of seamless teamwork between techies and
+                            business professionals in driving successful outcomes.
+                        </p>
+
+                    </div>
+
+                </div>
+                <br />
+                <div class="row">
+                </div>
+                <div class="row mt-4 border-0">
+                    <div class="col-lg-6">
+                        <img src="~/Content/WebsiteContent/images/dream.jpg" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="pq-about-title mt-4 mt-lg-0">
+                            <a href="~/Home/AboutUs">
+                                Our Journey and Vision
+
+                            </a>
+                        </h2>
+                        <p class="pq-description mb-0 mt-4">
+                            We started as a chat group among colleagues in computer technology and business professions,
+                            aiming to solve practical problems collaboratively. This informal exchange of ideas and expertise led to the formation of a
+                            professional network called We(e) Collective, where we realized the power of diverse perspectives in tackling complex challenges.
+                            The natural evolution of our discussions and projects culminated in the creation of We(e)BTP.
+                            Our journey highlights the benefit of integrating varied professional
+                            insights to foster innovation, streamline processes, and deliver holistic business technology solutions.
+                        </p>
+
+                    </div>
+
+                </div>
+                <br />
+                <div class="row">
+                </div>
+                <div class="row mt-4 border-0">
+                    <div class="col-lg-6">
+                        <img src="~/Content/WebsiteContent/images/diifrence.jpg" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="pq-about-title mt-4 mt-lg-0">
+                            <a href="~/Home/AboutUs" style="text-transform:none">The We(e)BTP Difference</a>
+                        </h2>
+                        <p class="pq-description mb-0 mt-4">
+                            Our IPC model sets us apart, integrating varied perspectives to deliver customized technology solutions.
+                            We blend engineering, sales, and legal insights to meet unique business needs, offering comprehensive,
+                        </p>
+                    </div>
+
+                </div>
+                <br />
+                <div class="row">
+                </div>
+                <div class="row mt-4 border-0">
+                    <div class="col-lg-6">
+                        <img src="~/Content/WebsiteContent/images/ipc1.jpg" alt="">
+                        <img src="~/Content/WebsiteContent/images/ipc2.jpg" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="pq-about-title mt-4 mt-lg-0">
+                            <a href="~/Home/AboutUs">
+                                Benefits of Our IPC Model
+                            </a>
+                        </h2>
+                        <p class="pq-description mb-0 mt-4">
+                            <span style="font-weight:bold;">Comprehensive Solutions:</span> End-to-end services across all disciplines.
+                        <p class="mb-0"><span style="font-weight:bold;">Innovation:</span> Diverse team drives creative, tailored strategies.</p>
+                        <span style="font-weight:bold;">Efficiency:</span> Streamlined processes enhance project execution and
+                        </p>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                </div>
+                <div class="row mt-4 border-0">
+                    <div class="col-lg-6">
+                        <img src="~/Content/WebsiteContent/images/cost.jpg" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="pq-about-title mt-4 mt-lg-0">
+                            <a href="~/Home/AboutUs">
+                                Passing On Cost Savings
+                            </a>
+                        </h2>
+                        <p class="pq-description mb-0 mt-4">
+                            We optimize processes to eliminate unnecessary costs, offering
+                            high-quality services at competitive rates. Our efficient model allows us to provide exceptional value to our clients.
+                        </p>
+                    </div>
+
+                </div>
+                <br />
+                <div class="row">
+                </div>
+                <div class="row mt-4 border-0">
+                    <div class="col-lg-6">
+                        <img src="~/Content/WebsiteContent/images/about-us/join-our-collective-image.jpg" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="pq-about-title mt-4 mt-lg-0">
+                            <a href="~/Home/AboutUs">Join Our Collective</a>
+                        </h2>
+                        <p class="pq-description mb-0 mt-4">
+                            Partnering with us means joining a dedicated collective of professionals committed to your success.
+                            Explore how our cutting-edge solutions can transform your business and help you navigate the evolving tech
+                            landscape.
+                        </p>
+                        <br />
+                        <p class="pq-description mb-0">
+                            Contact us today to discover how We(e) Business Technology Partners can drive your
+                            organization towards a prosperous future.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Software End-->

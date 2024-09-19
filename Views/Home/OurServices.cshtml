@@ -1,0 +1,566 @@
+﻿@model WeeBtpWebsite.Models.ContactUsModel
+@{
+    ViewData["Title"] = "OurServices";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!--Header Start-->
+<header id="pq-header" class="pq-header-default">
+    <div class="pq-top-header">
+        <div class="container">
+            <div class="row flex-row-reverse">
+                <div class="col-md-6 text-right">
+                    <div class="pq-header-social text-right">
+                        <ul>
+                            <li><a href="https://www.facebook.com/weebtp" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/weebtp/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://twitter.com/weebtp" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pq-header-contact ">
+                        <ul>
+                            <li>
+                                <a href="tel:+8007816632"><i class="fas fa-phone-flip"></i><span>(800)781-6632</span></a>
+                            </li>
+                            <li>
+                                <a href="mailto:initiative@weebtp.com"><i class="fas fa-envelope"></i><span>initiative@weebtp.com</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pq-bottom-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="~/Home/Home">
+                            <img class="img-fluid logo" src="~/Content/WebsiteContent/images/We(e)BTPv2.0.png" alt="We(e)">
+                        </a>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div id="pq-menu-contain" class="pq-menu-contain">
+                                <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                                    @*<li class="menu-item current-menu-item manu-item-has-children">
+                                    <a href="#">Home</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                    <ul class="sub-menu">
+                                    <li class="menu-item">
+                                    <a href="main-home.html" aria-current="page">Main Home</a>
+                                    </li>
+                                    <li class="menu-item current-menu-item">
+                                    <a href="home-modern.html">home modern</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="start-up-home.html">Start Up Home</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="it-agency.html">IT Agency</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="software-company.html">Software Company</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="home-classic.html">home classic</a>
+                                    </li>
+                                    </ul>
+                                    </li>*@
+                                    <li class="menu-item current-menu-item">
+                                        <a href="~/Home/OurServices">Services</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeCodeIGNITE" style="text-transform:none;">We(e) CodeIGNITE</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeSecurity360" style="text-transform:none;">We(e) Security360</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeCloudSPHERE" style="text-transform:none;">We(e) CloudSPHERE</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeNextgenFLOW" style="text-transform:none;">We(e) NextgenFLOW</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeBlockCENTRAL" style="text-transform:none;">We(e) BlockCENTRAL</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeDatastAIsis" style="text-transform:none;">We(e) DatastAIsis</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeePraaS" style="text-transform:none;">We(e) PraaS</a>
+                                            </li>
+                                            @*<li class="menu-item">
+                                            <a href="~/Home/DatabaseDevelopment">Database Development</a>
+                                            </li>
+                                            <li class="menu-item">
+                                            <a href="~/Home/DataAnalysisAutomation">Analysis & Automation</a>
+                                            </li>
+                                            <li class="menu-item">
+                                            <a href="~/Home/Office365Development">Office365 Development</a>
+                                            </li>*@
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Industries</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Finance">Finance</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Healthcare">Healthcare</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Retail">Retail</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Education">Education</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/RealEstate">Real Estate</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Travel">Travel</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Other">Others</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="~/Home/Blog">Blog</a>@*<i class="fa fa-chevron-down pq-submenu-icon"></i>*@
+                                        @*<ul class="sub-menu">
+                                        <li class="menu-item menu-item-has-children">
+                                        <a href="#">Grid Style</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                        <li class="menu-item">
+                                        <a href="one-column-blog.html">One Column Blog</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="two-column-blog.html">Two Column Blog</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="three-column-blog.html">Three Column Blog</a>
+                                        </li>
+                                        </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children">
+                                        <a href="#">Blog Sidebar</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                        <li class="menu-item">
+                                        <a href="blog-right-sidebar.html">Blog Right Sidebar</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="blog-left-sidebar.html">Blog Left Sidebar</a>
+                                        </li>
+                                        </ul>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="app-promotes-sales-profits-in-it-solutions.html">
+                                        Blog
+                                        Single
+                                        </a>
+                                        </li>
+                                        </ul>*@
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="~/Home/ContactUs">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pq-menu-search-block">
+                            @*<a href="javascript:void(0)" id="pq-seacrh-btn"><i class="fa fa-search"></i></a>
+                            <div class="pq-search-form">
+
+                            <form role="search" method="get" class="search-form"
+                            action="https://techtrix.peacefulqode.com/">
+                            <label>
+                            <span class="screen-reader-text">Search for:</span>
+                            <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+                            </label>
+                            <button type="submit" class="search-submit">
+                            <span class="screen-reader-text">Search</span>
+                            </button>
+                            </form>
+                            </div>*@
+                        </div>
+                        <a href="~/Home/FreeQuote" class="pq-button">
+                            <div class="pq-button-block">
+
+                                <span class="pq-button-text">Free Quote</span>
+                            </div>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Header End-->
+<!--Breadcrumb Start-->
+<div class="pq-breadcrumb pq-bg-dark pq-bg-img-2">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <nav aria-label="breadcrumb">
+                    <div class="pq-breadcrumb-title">
+                        <h1>Our Services</h1>
+                    </div>
+                    <div class="pq-breadcrumb-container">
+                        <ol class="breadcrumb align-items-center">
+                            <li class="breadcrumb-item"><a href="~/Home/Home"><i class="fa fa-home me-2"></i>Home</a></li>
+                            <li class="breadcrumb-item active">Our Services</li>
+                        </ol>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Breadcrumb End-->
+<!--Software Start-->
+<section class="all-services">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-4">
+                <div class="pq-widget">
+                    <div class="pq-widget pq-widget-port p-0">
+                        <div class="menu-service-menu-container">
+                            <ul id="menu-service-menu" class="menu">
+                                <li @*class="current-menu-item"*@>
+                                    <a href="~/OurServices/WeeCodeIGNITE" aria-current="page" style="text-transform:none;">We(e) CodeIGNITE</a>
+                                </li>
+
+                                <li>
+                                    <a href="~/OurServices/WeeSecurity360" aria-current="page" style="text-transform:none;">We(e) Security360</a>
+                                </li>
+
+                                <li>
+                                    <a href="~/OurServices/WeeCloudSPHERE" aria-current="page" style="text-transform:none;">We(e) CloudSPHERE</a>
+                                </li>
+
+                                <li>
+                                    <a href="~/OurServices/WeeNextgenFLOW" aria-current="page" style="text-transform:none;">We(e) NextgenFLOW</a>
+                                </li>
+
+                                <li>
+                                    <a href="~/OurServices/WeeBlockCENTRAL" aria-current="page" style="text-transform:none;">We(e) BlockCENTRAL</a>
+                                </li>
+                                <li>
+                                    <a href="~/OurServices/WeeDatastAIsis" aria-current="page" style="text-transform:none;">We(e) DatastAIsis</a>
+                                </li>
+                                <li>
+                                    <a href="~/OurServices/WeePraaS" aria-current="page" style="text-transform:none;">We(e) PraaS</a>
+                                </li>
+                                @*<li>
+                                <a href="~/Home/DatabaseDevelopment" aria-current="page">Database Development</a>
+                                </li>
+                                <li>
+                                <a href="~/Home/DataAnalysisAutomation" aria-current="page">Analysis & Automation</a>
+                                </li>
+                                <li>
+                                <a href="~/Home/Office365Development" aria-current="page">Office 365 Development</a>
+                                </li>*@
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="media-image">
+                    <div class="pq-form-section pq-style-1" style="position:absolute;padding-left:10px;padding-top:10px;">
+                        <span class="pq-form-title" style="font-size: 22px; line-height: 10px; font-weight: 900 ">Have an Idea?</span><br />
+                        <span class="pq-form-title" style="font-size: 22px; line-height: 10px; font-weight: 900">We can help</span>
+                    </div>
+                    <a href="contact-us.html"><img src="~/Content/WebsiteContent/images/callcenter.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-8 mt-4 mt-lg-0" @*style="padding-right: 149px;"*@>
+                <img src="~/Content/WebsiteContent/images/services.jpg" alt="">
+                @*<h2 class="pq-heading mt-4">In Fact, They Can Be Incredibly Powerful.</h2>*@
+                <p class="pq-description">
+                    Our team of skilled professionals combines technical expertise with industry
+                    knowledge to delivering cutting-edge technology that empower businesses to thrive
+                    in the digital age.
+                </p>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="pq-fancy-box pq-fancybox-1">
+                            <div class="pq-fancy-media">
+                                <img src="~/Content/WebsiteContent/images/WebAppDevlopment.png" />
+                            </div>
+                            <div class="pq-fancybox-info">
+                                <img style="margin-left:-25px;" src="~/Content/WebsiteContent/images/services/Wee-Codeignite-transp-no-service-type.png" />
+                                <p>
+                                    Transform your ideas into powerful software with We(e) CodeIGNITE.
+                                    We create custom, scalable web, mobile, and desktop solutions.
+                                </p>
+                                <a class="pq-button pq-btn-link" href="~/OurServices/WeeCodeIGNITE">
+                                    <span class="text">Read More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pq-fancy-box pq-fancybox-1 pq-mt-30 mb-4">
+                            <div class="pq-fancy-media">
+                                <img src="~/Content/WebsiteContent/images/CloudDev.png" />
+                            </div>
+                            <div class="pq-fancybox-info">
+                                <img style="margin-left:-30px;" src="~/Content/WebsiteContent/images/services/Wee-cloudshpere-transp-no-service-type.png" />
+                                <p>
+                                    Unlock the potential of the mobile world
+                                    with our custom mobile app development
+                                    services.
+                                </p>
+                                <a class="pq-button pq-btn-link" href="~/OurServices/WeeCloudSPHERE">
+                                    <span class="text">Read More</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt-4 mt-md-0">
+                        <div class="pq-fancy-box pq-fancybox-1 pq-ml-30">
+                            <div class="pq-fancy-media">
+                                <img src="~/Content/WebsiteContent/images/CyberSec.png" />
+                            </div>
+                            <div class="pq-fancybox-info">
+                                <img style="margin-left:-30px;" src="~/Content/WebsiteContent/images/services/Wee-security360-transp-no-service-type.png" />
+                                <p>
+                                    Safeguard your business with We(e) Security360.Our Comprehensive cybersecurity services protect against evolving threads.
+                                </p>
+                                <a class="pq-button pq-btn-link" href="~/OurServices/WeeSecurity360">
+                                    <span class="text">Read More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pq-fancy-box pq-fancybox-1 pq-mt-30 pq-ml-30 mb-4">
+                            <div class="pq-fancy-media">
+                                <img src="~/Content/WebsiteContent/images/BlockchainAppDevelopment.png" />
+                            </div>
+                            <div class="pq-fancybox-info">
+                                <img style="margin-left:-25px;" src="~/Content/WebsiteContent/images/services/Wee-nextgenflow-trans-no-service-type.png" />
+                                <p>
+                                    We(e) develop secure and decentralized
+                                    solutions that enhance transparency, trust, and efficiency in various industries.
+                                </p>
+                                <a class="pq-button pq-btn-link" href="~/OurServices/WeeNextgenFLOW">
+                                    <span class="text">Read More</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="pq-fancy-box pq-fancybox-1">
+                            <div class="pq-fancy-media">
+                                <img src="~/Content/WebsiteContent/images/BlockchainAppDevelopment.png" />
+
+                            </div>
+                            <div class="pq-fancybox-info">
+                                <img style="margin-left:-20px;" src="~/Content/WebsiteContent/images/services/Wee-blockcentral-transp-no-service-type.png" />
+                                <p>
+                                    Make a lasting impression for your
+                                    applications and websites with our
+                                    exceptional design services.
+                                </p>
+                                <a class="pq-button pq-btn-link" href="~/OurServices/WeeBlockCENTRAL">
+                                    <span class="text">Read More</span>
+                                </a>
+                            </div>
+                        </div>
+                        @* <div class="pq-fancy-box pq-fancybox-1 pq-mt-30 mb-4">
+                        <div class="pq-fancy-media">
+                        <img src="~/Content/WebsiteContent/images/CyberSec.png" />
+                        </div>
+                        <div class="pq-fancybox-info">
+                        <img src="~/Content/WebsiteContent/images/services/Wee-datastaisis-transp-no-service-type.png" />
+                        <p>
+                        Protect your valuable assets from cyber
+                        threats with our top-notch cybersecurity
+                        solutions.
+                        </p>
+                        <a class="pq-button pq-btn-link" href="~/OurServices/WeeDatastAIsis">
+                        <span class="text">Read More</span>
+                        </a>
+                        </div>
+                        </div> *@
+                        <div class="pq-fancy-box pq-fancybox-1">
+                            <div class="pq-fancy-media">
+                                <img src="~/Content/WebsiteContent/images/AnalysisAutomate.png" />
+                            </div>
+                            <div class="pq-fancybox-info">
+                                <img style="margin-left:-30px;" src="~/Content/WebsiteContent/images/services/Wee-praas-transp-no-service-type.png" />
+                                <p>
+                                    Harness the power of data with our data
+                                    analysis and automation services.
+                                </p>
+                                <a class="pq-button pq-btn-link" href="~/OurServices/WeePraaS">
+                                    <span class="text">Read More</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt-4 mt-md-0">
+                        <div class="pq-fancy-box pq-fancybox-1 pq-ml-30">
+                            <div class="pq-fancy-media">
+                                <img src="~/Content/WebsiteContent/images/CyberSec.png" />
+                            </div>
+                            <div class="pq-fancybox-info">
+                                <img style="margin-left:-25px;" src="~/Content/WebsiteContent/images/services/Wee-datastaisis-transp-no-service-type.png" />
+                                <p>
+                                    Protect your valuable assets from cyber
+                                    threats with our top-notch cybersecurity
+                                    solutions.
+                                </p>
+                                <a class="pq-button pq-btn-link" href="~/OurServices/WeeDatastAIsis">
+                                    <span class="text">Read More</span>
+                                </a>
+                            </div>
+                        </div>
+                        @*                         <div class="pq-fancy-box pq-fancybox-1 pq-mt-30 pq-ml-30 mb-4">
+                        <div class="pq-fancy-media">
+                        <img src="~/Content/WebsiteContent/images/designdevelopment.png" />
+                        </div>
+                        <div class="pq-fancybox-info">
+                        <h5 class="pq-fancy-box-title">Database Development</h5>
+                        <p>
+                        Efficiently manage and organize your
+                        data with our expert database
+                        development services.
+                        </p>
+                        <a class="pq-button pq-btn-link" href="~/Home/DatabaseDevelopment">
+                        <span class="text">Read More</span>
+                        </a>
+                        </div>
+                        </div>
+                        <div class="pq-fancy-box pq-fancybox-1 pq-mt-30 pq-ml-30 mb-4">
+                        <div class="pq-fancy-media">
+                        <img src="~/Content/WebsiteContent/images/Office365Dev.png" />
+                        </div>
+                        <div class="pq-fancybox-info">
+                        <h5 class="pq-fancy-box-title">Office 365 Development</h5>
+                        <p>
+                        Maximize the capabilities of Office 365
+                        with our customized development
+                        services.
+                        </p>
+                        <a class="pq-button pq-btn-link" href="~/Home/Office365Development">
+                        <span class="text">Read More</span>
+                        </a>
+                        </div>
+                        </div>
+                        *@
+                    </div>
+                    @*<div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="pq-fancy-box pq-fancybox-1">
+                    <div class="pq-fancy-media">
+                    <i class="flaticon-line-chart"></i>
+                    </div>
+                    <div class="pq-fancybox-info">
+                    <h5 class="pq-fancy-box-title">Data Analysis & Automation</h5>
+                    <p>
+                    Harness the power of data with our data
+                    analysis and automation services.
+                    </p>
+                    <a class="pq-button pq-btn-link" href="~/Home/DataAnalysisAutomation">
+                    <span class="text">Read More</span>
+                    </a>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt-4 mt-md-0">
+                    <div class="pq-fancy-box pq-fancybox-1 pq-mt-30 pq-ml-30 mb-4">
+                    <div class="pq-fancy-media">
+                    <i class="flaticon-ux-design"></i>
+                    </div>
+                    <div class="pq-fancybox-info">
+                    <h5 class="pq-fancy-box-title">Office 365 Development</h5>
+                    <p>
+                    Maximize the capabilities of Office 365
+                    with our customized development
+                    services.
+                    </p>
+                    <a class="pq-button pq-btn-link" href="~/Home/Office365Development">
+                    <span class="text">Read More</span>
+                    </a>
+                    </div>
+                    </div>
+                    </div>*@
+
+                </div>
+                <div class="row border-0 pq-my-45 g-0">
+                <div class="container">
+                <div class="row g-0">
+                <div class="col-xl-4 col-lg-4 col-md-4">
+                <img src="~/Content/WebsiteContent/images/services/lowcosthq-image.jpg" style="height:100.0%;width:100%" alt="">
+                </div>
+                <div class="col-xl-8 col-lg-8 col-md-8">
+                <div class="pq-imagebox-content pq-bg-primary" style="padding:10px 10px 10px 10px;">
+                <h1 class="pq-imagebox-title mt-5">
+                LowCostHQ: Premium
+                Quality, Unbeatable
+                Prices
+                </h1>
+                <div>
+                <p class="pq-time pq-text-white">
+                Experience top-tier services at unmatched rates. With LowCostHQ, we cut costs, boost quality, and
+                pass the savings directly to you.
+                </p>
+                @* <a href="~/Home/ContactUs" class="pq-link">
+                <span class="pq-link-text">Schedule Appointment</span>
+                </a> *@
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mt-4 mt-lg-0">
+                    <div class="inquiry-form pq-bg-grey">
+                        <div class="pq-form-section pq-style-1">
+                            <span class="pq-form-title" style="font-size:20px;">Call Us Now</span><br />
+                            <span class="pq-form-title" style="font-size: 20px; font-weight: 700;">(800) 781-6632</span>
+                            <h5 class="pq-form-title" style="font-size:24px;line-height:15px">Request A Free Consultation</h5>
+                        </div>
+                        @using (Html.BeginForm("OurServices", "OurServices", FormMethod.Post, new { @class = "pq-applyform" }))
+                        {
+                            <div class="row">
+                                <div class="col-md-12">
+                                    @*<input type="text" id="first-name" class="pq-bg-white name-field" placeholder="Your Name" required>*@
+                                    @Html.TextBoxFor(m => m.firstName, new { placeholder = "Your Name", @class = "pq-bg-white name-field", required = "required" })
+                                </div>
+                                <div class="col-md-12">
+                                    @*<input type="text" id="e-mail" class="pq-bg-white e-mail-field" placeholder="Email" required>*@
+                                    @Html.TextBoxFor(m => m.email, new { placeholder = "Email", @class = "pq-bg-white e-mail-field", required = "required" })
+                                </div>
+                                <div class="col-md-12">
+                                    @*<input type="text" id="phone-number" class="pq-bg-white phone-number-field" placeholder="Cell Phone" required>*@
+                                    @Html.TextBoxFor(m => m.phoneNumber, new { placeholder = "Phone", @class = "pq-bg-white phone-number-field", required = "required" })
+                                </div>
+                                <div class="col-md-12">
+                                    @*<input type="text" id="subject" class="pq-bg-white subject-field" placeholder="Subject" required>*@
+                                    @Html.TextBoxFor(m => m.Subject, new { placeholder = "Subject", @class = "pq-bg-white subject-field", required = "required" })
+                                </div>
+                                <div class="col-md-12">
+                                    @*<textarea name="your-message" id="message" class="pq-bg-white" cols="10" rows="4" placeholder="Your Message" required></textarea>*@
+                                    @Html.TextAreaFor(m => m.Message, new { rows = "5", cols = "10", placeholder = "Your Message", @class = "pq-bg-white name-field", required = "required" })
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="pq-button-block">
+                                        <input class="pq-button-text" id="emailForm" type="submit" value="Send Message" />
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Software End-->

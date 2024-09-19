@@ -1,0 +1,566 @@
+﻿
+@{
+    ViewData["Title"] = "Real Estate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!--Header Start-->
+<header id="pq-header" class="pq-header-default">
+    <div class="pq-top-header">
+        <div class="container">
+            <div class="row flex-row-reverse">
+                <div class="col-md-6 text-right">
+                    <div class="pq-header-social text-right">
+                        <ul>
+                            <li><a href="https://www.facebook.com/weebtp" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/weebtp/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://twitter.com/weebtp" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pq-header-contact ">
+                        <ul>
+                            <li>
+                                <a href="tel:+8007816632"><i class="fas fa-phone-flip"></i><span>(800)781-6632</span></a>
+                            </li>
+                            <li>
+                                <a href="mailto:initiative@weebtp.com"><i class="fas fa-envelope"></i><span>initiative@weebtp.com</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pq-bottom-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="~/Home/Home">
+                            <img class="img-fluid logo" src="~/Content/WebsiteContent/images/We(e)BTPv2.0.png" alt="We(e)">
+                        </a>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div id="pq-menu-contain" class="pq-menu-contain">
+                                <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                                    @*<li class="menu-item current-menu-item manu-item-has-children">
+                                    <a href="#">Home</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                    <ul class="sub-menu">
+                                    <li class="menu-item">
+                                    <a href="main-home.html" aria-current="page">Main Home</a>
+                                    </li>
+                                    <li class="menu-item current-menu-item">
+                                    <a href="home-modern.html">home modern</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="start-up-home.html">Start Up Home</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="it-agency.html">IT Agency</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="software-company.html">Software Company</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="home-classic.html">home classic</a>
+                                    </li>
+                                    </ul>
+                                    </li>*@
+                                    <li class="menu-item">
+                                        <a href="~/Home/OurServices">Services</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeCodeIGNITE">We(e) CodeIGNITE</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeSecurity360">We(e) Security360</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeCloudSPHERE">We(e) CloudSPHERE</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeNextgenFLOW">We(e) NextgenFLOW</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeBlockCENTRAL">We(e) BlockCENTRAL</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeDatastAIsis">We(e) DatastAIsis</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeePraaS">We(e) PraaS</a>
+                                            </li>
+                                            @*<li class="menu-item">
+                                            <a href="~/Home/DatabaseDevelopment">Database Development</a>
+                                            </li>
+                                            <li class="menu-item">
+                                            <a href="~/Home/DataAnalysisAutomation">Analysis & Automation</a>
+                                            </li>
+                                            <li class="menu-item">
+                                            <a href="~/Home/Office365Development">Office365 Development</a>
+                                            </li>*@
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item current-menu-item">
+                                        <a href="#">Industries</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Finance">Finance</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Healthcare">Healthcare</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Retail">Retail</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Education">Education</a>
+                                            </li>
+                                            <li class="menu-item current-menu-item">
+                                                <a href="~/Industries/RealEstate">Real Estate</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Travel">Travel</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Other">Others</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="~/Home/Blog">Blog</a>@*<i class="fa fa-chevron-down pq-submenu-icon"></i>*@
+                                        @*<ul class="sub-menu">
+                                        <li class="menu-item menu-item-has-children">
+                                        <a href="#">Grid Style</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                        <li class="menu-item">
+                                        <a href="one-column-blog.html">One Column Blog</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="two-column-blog.html">Two Column Blog</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="three-column-blog.html">Three Column Blog</a>
+                                        </li>
+                                        </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children">
+                                        <a href="#">Blog Sidebar</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                        <li class="menu-item">
+                                        <a href="blog-right-sidebar.html">Blog Right Sidebar</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="blog-left-sidebar.html">Blog Left Sidebar</a>
+                                        </li>
+                                        </ul>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="app-promotes-sales-profits-in-it-solutions.html">
+                                        Blog
+                                        Single
+                                        </a>
+                                        </li>
+                                        </ul>*@
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="~/Home/ContactUs">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pq-menu-search-block">
+                            @*<a href="javascript:void(0)" id="pq-seacrh-btn"><i class="fa fa-search"></i></a>
+                            <div class="pq-search-form">
+
+                            <form role="search" method="get" class="search-form"
+                            action="https://techtrix.peacefulqode.com/">
+                            <label>
+                            <span class="screen-reader-text">Search for:</span>
+                            <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+                            </label>
+                            <button type="submit" class="search-submit">
+                            <span class="screen-reader-text">Search</span>
+                            </button>
+                            </form>
+                            </div>*@
+                        </div>
+                        <a href="~/Home/FreeQuote" class="pq-button">
+                            <div class="pq-button-block">
+
+                                <span class="pq-button-text">Free Quote</span>
+                            </div>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Header End-->
+<!--Breadcrumb Start-->
+<div class="pq-breadcrumb pq-bg-dark pq-bg-img-2">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <nav aria-label="breadcrumb">
+                    <div class="pq-breadcrumb-title">
+                        <h1>
+                            Real Estate
+                        </h1>
+                    </div>
+                    <div class="pq-breadcrumb-container">
+                        <ol class="breadcrumb align-items-center">
+                            <li class="breadcrumb-item">
+                                <a>
+                                    We(e) can help Real Estate companies capitalize on the potentials of business
+                                    technologies to overcome challenges and maximize potentials
+                                </a>
+                            </li>
+                            @*<li class="breadcrumb-item active">
+                            Real Estate
+                            </li>*@
+                        </ol>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Breadcrumb End-->
+<!--3 Column Start-->
+<section class="pq-pb-190">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="pq-grid-container">
+                    <div class="pq-filters">
+                        <div class="filters pq-filter-button-group">
+                            <ul>
+                                <li class="active pq-filter-btn" data-filter="*">All</li>
+                                <li class="pq-filter-btn" data-filter=".14">At a Glance</li>
+                                <li class="pq-filter-btn" data-filter=".5">Chanllenges</li>
+                                <li class="pq-filter-btn" data-filter=".15" style="text-transform:none;">HOW We(e) CAN HELP</li>
+                                @*<li class="pq-filter-btn" data-filter=".8">Technology</li>*@
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pq-grid " data-next_items="3" data-initial_items="6">
+                        <div class="pq-grid-item pq-filter-items  pq-crop-img  14  ">
+                            <div class="row mt-4  border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/realestate.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <h2 class="pq-about-title mt-4 mt-lg-0">
+                                        <a href="#">
+                                            Real Estate Industry At A Glance
+                                        </a>
+                                    </h2>
+                                    <p class="pq-description mb-0">
+                                        The real estate industry is a critical part of any economy. It involves the
+                                        buying, selling, and renting of property, including land, buildings, and
+                                        homes. The industry is diverse and includes a range of players, from real
+                                        estate agents to developers and property managers.
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        The real estate industry is driven by a range of factors, including population
+                                        growth, economic growth, and urbanization. Despite its many drivers, the
+                                        industry also faces significant challenges, including affordability and
+                                        regulatory challenges. To stay ahead in this ever-changing industry, it's
+                                        important to keep up with the latest trends, including sustainable building
+                                        practices and technology advancements.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+                        </div>
+                        <div class="pq-grid-item pq-filter-items  pq-crop-img  5 ">
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/industry.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <h2 class="pq-about-title mt-4 mt-lg-0">
+                                        <a href="#">
+                                            Real Estate Industry Challenges
+
+                                        </a>
+                                    </h2>
+                                    <p class="pq-description mb-0">
+                                        The real estate industry is facing several challenges. These challenges
+                                        include data management and analysis, cyber security, cost and
+                                        efficiency, business process automation, and collaboration and
+                                        communication.
+                                    </p>
+                                    <p class="pq-description mb-0">Let's explore these challenges affects the industry.</p>
+                                    <p class="pq-description mb-0" style="font-weight:bold">Data Management and Analysis</p>
+                                    <p class="pq-description mb-0">
+                                        Real estate companies are constantly dealing with large volumes of
+                                        data, including customer information, property data, and financial data. Managing and analyzing this data can be a challenging task.
+                                    </p>
+                                    <p class="pq-description mb-0" style="font-weight:bold">Cyber Security</p>
+                                    <p class="pq-description mb-0">
+                                        Real estate companies are prime targets for cybercriminals due to the
+                                        sensitive information they hold. Hackers can steal customer data, financial information, and personal identification data, which can be
+                                        detrimental to the company and its customers.
+                                    </p>
+                                    <p class="pq-description mb-0" style="font-weight:bold">Cost and Efficiency</p>
+                                    <p class="pq-description mb-0">
+                                        Real estate companies must maintain high levels of efficiency while
+                                        keeping costs under control. This is especially challenging when
+                                        dealing with a large number of properties and transactions.
+                                    </p>
+                                    <p class="pq-description mb-0" style="font-weight:bold">
+                                        Business Process Automation
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        Real estate companies must find ways to automate their business
+                                        processes to improve efficiency and reduce costs. However, automating these processes can be a daunting task, requiring
+                                        specialized knowledge and expertise.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+                        </div>
+                        <div class="pq-grid-item pq-filter-items  pq-crop-img  15 ">
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/challenges.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <h2 class="pq-about-title mt-4 mt-lg-0">
+                                        <a href="#" style="text-transform:none;">
+                                            How We(e) Can Help The Real Estate
+                                            Industry Meet Their Challenges
+                                        </a>
+                                    </h2>
+                                    <p class="pq-description mb-0">
+                                        The real estate industry has been undergoing a significant transformation over the
+                                        past few years, with technology playing an increasingly important role in the way
+                                        the industry operates.
+                                    </p>
+                                    <p>
+                                        With this transformation comes a range of challenges that We(e) can help solve
+                                        through our services such as application development, cyber security, cloud, blockchain, data analysis, automation, and Office 365 development
+                                    </p>
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/development.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    @*<h2 class="pq-about-title mt-4 mt-lg-0">
+                                    <a href="about-us.html">
+                                    Benefits of Our IPC Model
+                                    </a>
+                                    </h2>*@
+                                    <p class="pq-description mb-0" style="font-weight:bold">
+                                        Software Development
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        With custom software development services, We(e) can create tailored
+                                        software solutions that meet the specific needs of a real estate
+                                        business. This can include everything from property management
+                                        software to customer relationship management (CRM) systems.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/cybersceurity3.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    @*<h2 class="pq-about-title mt-4 mt-lg-0">
+                                    <a href="about-us.html">
+                                    Streamlined Model To Pass On
+                                    Cost Savings To Our Customers
+                                    </a>
+                                    </h2>*@
+                                    <p class="pq-description mb-0" style="font-weight:bold">
+                                        Cyber Security
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        The real estate industry is a prime target for cyber attacks due to the
+                                        sensitive financial and personal information that is often involved in
+                                        property transactions.
+
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        We(e) can provide cyber security services to help protect against data
+                                        breaches, ransomware attacks, and other threats. This can include
+                                        everything from vulnerability assessments to implementing secure
+                                        cloud solutions.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/cloudsolution.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    @*<h2 class="pq-about-title mt-4 mt-lg-0">
+                                    <a href="about-us.html">Join Us on the Path to Success</a>
+                                    </h2>*@
+                                    <p class="pq-description mb-0" style="font-weight:bold">
+                                        Cloud Solutions
+
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        Cloud computing has revolutionized the way businesses operate by
+                                        providing a scalable, cost-effective, and secure way to store and
+                                        manage data.
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        We(e) can help real estate businesses take advantage of the benefits
+                                        of cloud computing by providing cloud migration services, cloud
+                                        integration services, and cloud security services. This can help real
+                                        estate businesses reduce costs, increase flexibility, and improve data
+                                        security
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/blockchain3.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    @*<h2 class="pq-about-title mt-4 mt-lg-0">
+                                    <a href="about-us.html">
+                                    Streamlined Model To Pass On
+                                    Cost Savings To Our Customers
+                                    </a>
+                                    </h2>*@
+                                    <p class="pq-description mb-0" style="font-weight:bold">
+                                        Blockchain Solutions
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        Blockchain technology has the potential to transform the real estate
+                                        industry by providing a secure, transparent, and decentralized way to
+                                        manage property transactions.
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        We(e) can help real estate businesses explore the benefits of
+                                        blockchain technology by providing blockchain consulting services, blockchain development services, and smart contract development
+                                        services. This can help real estate businesses reduce costs, increase
+                                        transparency, and streamline property transactions.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/dataanalysis4.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    @*<h2 class="pq-about-title mt-4 mt-lg-0">
+                                    <a href="about-us.html">Join Us on the Path to Success</a>
+                                    </h2>*@
+                                    <p class="pq-description mb-0" style="font-weight:bold">
+                                        Data Analysis
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        Data analysis is becoming increasingly important in the real estate
+                                        industry as businesses strive to better understand their clients, properties, and market trends.
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        We)e) can provides data analysis services to help real estate
+                                        businesses make informed decisions based on real-time data. This can
+                                        include everything from data mining to predictive analytics.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/automation.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    @*<h2 class="pq-about-title mt-4 mt-lg-0">
+                                    <a href="about-us.html">
+                                    Streamlined Model To Pass On
+                                    Cost Savings To Our Customers
+                                    </a>
+                                    </h2>*@
+                                    <p class="pq-description mb-0" style="font-weight:bold">
+                                        Automation
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        Automation can help real estate businesses reduce costs, improve
+                                        efficiency, and provide a better user experience for clients.
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        We(e) can provide automation services to help real estate businesses
+                                        increase productivity, reduce errors, and improve customer satisfaction.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/erp.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    @*<h2 class="pq-about-title mt-4 mt-lg-0">
+                                    <a href="about-us.html">Join Us on the Path to Success</a>
+                                    </h2>*@
+                                    <p class="pq-description mb-0" style="font-weight:bold">
+                                        Office 365 Solutions
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        Office 365 is a powerful suite of cloud-based productivity tools that can
+                                        help real estate businesses streamline their operations and improve
+                                        collaboration.
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        We(e)’s Office 365 development services can help real estate
+                                        businesses take advantage of the benefits of this powerful suite of
+                                        tools. This can include everything from custom SharePoint
+                                        development to Microsoft Teams integration.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--3 Column End-->

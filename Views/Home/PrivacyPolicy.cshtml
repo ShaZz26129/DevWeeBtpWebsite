@@ -1,0 +1,324 @@
+﻿
+@{
+    ViewData["Title"] = "PrivacyPolicy";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!--Header Start-->
+<header id="pq-header" class="pq-header-default">
+    <div class="pq-top-header">
+        <div class="container">
+            <div class="row flex-row-reverse">
+                <div class="col-md-6 text-right">
+                    <div class="pq-header-social text-right">
+                        <ul>
+                            <li><a href="https://www.facebook.com/weebtp" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/weebtp/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://twitter.com/weebtp" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pq-header-contact ">
+                        <ul>
+                            <li>
+                                <a href="tel:+8007816632"><i class="fas fa-phone-flip"></i><span>(800)781-6632</span></a>
+                            </li>
+                            <li>
+                                <a href="mailto:initiative@weebtp.com"><i class="fas fa-envelope"></i><span>initiative@weebtp.com</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pq-bottom-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="~/Home/Home">
+                            <img class="img-fluid logo" src="~/Content/WebsiteContent/images/We(e)BTPv2.0.png" alt="We(e)">
+                        </a>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div id="pq-menu-contain" class="pq-menu-contain">
+                                <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                                    @*<li class="menu-item current-menu-item manu-item-has-children">
+                                    <a href="#">Home</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                    <ul class="sub-menu">
+                                    <li class="menu-item">
+                                    <a href="main-home.html" aria-current="page">Main Home</a>
+                                    </li>
+                                    <li class="menu-item current-menu-item">
+                                    <a href="home-modern.html">home modern</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="start-up-home.html">Start Up Home</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="it-agency.html">IT Agency</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="software-company.html">Software Company</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="home-classic.html">home classic</a>
+                                    </li>
+                                    </ul>
+                                    </li>*@
+                                    <li class="menu-item">
+                                        <a href="~/Home/OurServices">Services</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeCodeIGNITE">We(e) CodeIGNITE</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeSecurity360">We(e) Security360</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeCloudSPHERE">We(e) CloudSPHERE</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeNextgenFLOW">We(e) NextgenFLOW</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeBlockCENTRAL">We(e) BlockCENTRAL</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeDatastAIsis">We(e) DatastAIsis</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeePraaS">We(e) PraaS</a>
+                                            </li>
+                                            @*<li class="menu-item">
+                                            <a href="~/Home/DatabaseDevelopment">Database Development</a>
+                                            </li>
+                                            <li class="menu-item">
+                                            <a href="~/Home/DataAnalysisAutomation">Analysis & Automation</a>
+                                            </li>
+                                            <li class="menu-item">
+                                            <a href="~/Home/Office365Development">Office365 Development</a>
+                                            </li>*@
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Industries</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Finance">Finance</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Healthcare">Healthcare</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Retail">Retail</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Education">Education</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/RealEstate">Real Estate</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Travel">Travel</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Other">Others</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="~/Home/Blog">Blog</a>@*<i class="fa fa-chevron-down pq-submenu-icon"></i>*@
+                                        @*<ul class="sub-menu">
+                                        <li class="menu-item menu-item-has-children">
+                                        <a href="#">Grid Style</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                        <li class="menu-item">
+                                        <a href="one-column-blog.html">One Column Blog</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="two-column-blog.html">Two Column Blog</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="three-column-blog.html">Three Column Blog</a>
+                                        </li>
+                                        </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children">
+                                        <a href="#">Blog Sidebar</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                        <li class="menu-item">
+                                        <a href="blog-right-sidebar.html">Blog Right Sidebar</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="blog-left-sidebar.html">Blog Left Sidebar</a>
+                                        </li>
+                                        </ul>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="app-promotes-sales-profits-in-it-solutions.html">
+                                        Blog
+                                        Single
+                                        </a>
+                                        </li>
+                                        </ul>*@
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="~/Home/ContactUs">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pq-menu-search-block">
+                            @*<a href="javascript:void(0)" id="pq-seacrh-btn"><i class="fa fa-search"></i></a>
+                            <div class="pq-search-form">
+
+                            <form role="search" method="get" class="search-form"
+                            action="https://techtrix.peacefulqode.com/">
+                            <label>
+                            <span class="screen-reader-text">Search for:</span>
+                            <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+                            </label>
+                            <button type="submit" class="search-submit">
+                            <span class="screen-reader-text">Search</span>
+                            </button>
+                            </form>
+                            </div>*@
+                        </div>
+                        <a href="~/Home/FreeQuote" class="pq-button">
+                            <div class="pq-button-block">
+
+                                <span class="pq-button-text">Free Quote</span>
+                            </div>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Header End-->
+<!--Breadcrumb Start-->
+<div class="pq-breadcrumb pq-bg-dark pq-bg-img-2">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <nav aria-label="breadcrumb">
+                    <div class="pq-breadcrumb-title">
+                        <h1>Privacy Policy</h1>
+                    </div>
+                    <div class="pq-breadcrumb-container">
+                        <ol class="breadcrumb align-items-center">
+                            <li class="breadcrumb-item">
+                                <a href="~/Home/Home"><i class="fa fa-home me-2"></i>Home</a>
+                            </li>
+                            <li class="breadcrumb-item active">Privacy Policy</li>
+                        </ol>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Breadcrumb End-->
+<!--Portfolio-Single Start-->
+<section class="portfolio-single pq-pb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                @*<h2 class="pq-portfolio-single-title">Terms</h2>*@
+                <p>
+                    Effective Date: May 1, 2023
+                </p>
+                <p>
+                    This Privacy Policy describes how We(e) Business Technology Partners ("we," "our," or "us") collects, uses, shares, and protects the
+                    personal information you provide when using our website and our services. We are committed to protecting your privacy and ensuring
+                    the security of your personal information. By using our Website and services, you consent to the practices described in this Privacy
+                    Policy.
+                </p>
+                <h2 class="pq-portfolio-single-title">Information We Collect</h2>
+                <p>
+                    1.1 Personal Information: We may collect personal information, such as your name, email address, phone number, job title, and
+                    company name, when you voluntarily provide it to us. This information may be required when you contact us, subscribe to our
+                    newsletter, request information, or use our services.
+                </p>
+                <p>
+                    1.2 Usage Information: We may collect certain non-personal information automatically as you navigate through the Website. This
+                    information may include your IP address, browser type, operating system, device information, and usage patterns. We use this
+                    information to improve our Website and services, analyze trends, and administer the Website.
+                </p>
+                <h2 class="pq-portfolio-single-title">Use of Information</h2>
+                <p>
+                    2.1 Personal Information: We may use the personal information you provide to respond to your inquiries, fulfill your requests, provide
+                    you with information about our services, and send you relevant communications. We may also use your information for administrative
+                    purposes, such as managing our Website, troubleshooting, and improving our services.
+                </p>
+                <p>
+                    2.2 Usage Information: We may use the non-personal information collected to analyze trends, administer the Website, track users' movements, and gather demographic information. This information helps us understand how users interact with our Website and
+                    enables us to improve its functionality and user experience.
+                </p>
+                <h2 class="pq-portfolio-single-title">Data Sharing</h2>
+                <p>
+                    3.1 Service Providers: We may engage third-party service providers to perform services on our behalf, such as website hosting, data
+                    analysis, and email delivery. These service providers may have access to your personal information but are only authorized to use it as
+                    necessary to provide the requested services.
+                </p>
+                <p>
+                    3.2 Legal Compliance and Protection: We may disclose your personal information if required by law or in good faith belief that such
+                    action is necessary to comply with legal obligations, protect our rights or property, investigate fraud, or respond to a government
+                    request.
+                </p>
+                <p>
+                    3.3 Business Transfers: In the event of a merger, acquisition, or sale of all or a portion of our assets, your personal information may be
+                    transferred to the acquiring entity or parties involved as part of the transaction. We will notify you via email or prominent notice on our
+                    Website before your personal information becomes subject to a different privacy policy.
+                </p>
+                <h2 class="pq-portfolio-single-title">Cookies and Similar Technologies</h2>
+                <p>
+                    4.1 Cookies: Our Website may use cookies and similar technologies to enhance your user experience, personalize content, analyze
+                    trends, and track users' movements. You can modify your browser settings to control the use of cookies, but please note that disabling
+                    cookies may limit certain features and functionality of our Website.
+                </p>
+                <h2 class="pq-portfolio-single-title">Data Security</h2>
+                <p>
+                    5.1 We employ reasonable security measures to protect your personal information from unauthorized access, use, or disclosure. However, no data transmission over the internet or electronic storage system can be guaranteed to be 100% secure. Therefore, while
+                    we strive to protect your personal information, we cannot guarantee its absolute security.
+                </p>
+                <h2 class="pq-portfolio-single-title">Links to Third-Party Websites </h2>
+                <p>
+                    6.1 Our Website may contain links to third-party websites that are not under our control. This Privacy Policy applies only to our Website. We encourage you to
+                    review the privacy policies of any third-party websites you visit through links provided on our Website.
+                </p>
+                <h2 class="pq-portfolio-single-title">Children's Privacy</h2>
+                <p>
+                    7.1 Our Website and services are not intended for children under the age of 13. We do not knowingly collect personal information from
+                    children. If you believe that we have collected personal information from a child under the age of 13, please contact us immediately, and
+                    we will take steps to remove that information from our records.
+                </p>
+                <h2 class="pq-portfolio-single-title">Updates to this Privacy Policy</h2>
+                <p>
+                    8.1 We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We will post the
+                    revised Privacy Policy on our Website and indicate the effective date. We encourage you to review this Privacy Policy periodically for
+                    any updates.
+                </p>
+                <h2 class="pq-portfolio-single-title">
+                    Contact Us
+                </h2>
+                <p>
+                    9.1 If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us at
+                    privacy@we-e.co.
+                </p>
+                <p>
+                    By using our Website and services, you acknowledge that you have read and understood this Privacy Policy
+                    and agree to the collection, use, and disclosure of your personal information as described herein.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Portfolio-Single End-->

@@ -1,0 +1,592 @@
+﻿
+@{
+    ViewData["Title"] = "Finance";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!--Header Start-->
+<header id="pq-header" class="pq-header-default">
+    <div class="pq-top-header">
+        <div class="container">
+            <div class="row flex-row-reverse">
+                <div class="col-md-6 text-right">
+                    <div class="pq-header-social text-right">
+                        <ul>
+                            <li><a href="https://www.facebook.com/weebtp" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/weebtp/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://twitter.com/weebtp" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pq-header-contact ">
+                        <ul>
+                            <li>
+                                <a href="tel:+8007816632"><i class="fas fa-phone-flip"></i><span>(800)781-6632</span></a>
+                            </li>
+                            <li>
+                                <a href="mailto:initiative@weebtp.com"><i class="fas fa-envelope"></i><span>initiative@weebtp.com</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pq-bottom-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="~/Home/Home">
+                            <img class="img-fluid logo" src="~/Content/WebsiteContent/images/We(e)BTPv2.0.png" alt="We(e)">
+                        </a>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div id="pq-menu-contain" class="pq-menu-contain">
+                                <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                                    @*<li class="menu-item current-menu-item manu-item-has-children">
+                                    <a href="#">Home</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                    <ul class="sub-menu">
+                                    <li class="menu-item">
+                                    <a href="main-home.html" aria-current="page">Main Home</a>
+                                    </li>
+                                    <li class="menu-item current-menu-item">
+                                    <a href="home-modern.html">home modern</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="start-up-home.html">Start Up Home</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="it-agency.html">IT Agency</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="software-company.html">Software Company</a>
+                                    </li>
+                                    <li class="menu-item">
+                                    <a href="home-classic.html">home classic</a>
+                                    </li>
+                                    </ul>
+                                    </li>*@
+                                    <li class="menu-item">
+                                        <a href="~/Home/OurServices">Services</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeCodeIGNITE">We(e) CodeIGNITE</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeSecurity360">We(e) Security360</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeCloudSPHERE">We(e) CloudSPHERE</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeNextgenFLOW">We(e) NextgenFLOW</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeBlockCENTRAL">We(e) BlockCENTRAL</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeeDatastAIsis">We(e) DatastAIsis</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/OurServices/WeePraaS">We(e) PraaS</a>
+                                            </li>
+                                            @*<li class="menu-item">
+                                            <a href="~/Home/DatabaseDevelopment">Database Development</a>
+                                            </li>
+                                            <li class="menu-item">
+                                            <a href="~/Home/DataAnalysisAutomation">Analysis & Automation</a>
+                                            </li>
+                                            <li class="menu-item">
+                                            <a href="~/Home/Office365Development">Office365 Development</a>
+                                            </li>*@
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item current-menu-item">
+                                        <a href="#">Industries</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item current-menu-item">
+                                                <a href="~/Industries/Finance">Finance</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Healthcare">Healthcare</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Retail">Retail</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Education">Education</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/RealEstate">Real Estate</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Travel">Travel</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="~/Industries/Other">Others</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="~/Home/Blog">Blog</a>@*<i class="fa fa-chevron-down pq-submenu-icon"></i>*@
+                                        @*<ul class="sub-menu">
+                                        <li class="menu-item menu-item-has-children">
+                                        <a href="#">Grid Style</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                        <li class="menu-item">
+                                        <a href="one-column-blog.html">One Column Blog</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="two-column-blog.html">Two Column Blog</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="three-column-blog.html">Three Column Blog</a>
+                                        </li>
+                                        </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children">
+                                        <a href="#">Blog Sidebar</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                        <li class="menu-item">
+                                        <a href="blog-right-sidebar.html">Blog Right Sidebar</a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="blog-left-sidebar.html">Blog Left Sidebar</a>
+                                        </li>
+                                        </ul>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="app-promotes-sales-profits-in-it-solutions.html">
+                                        Blog
+                                        Single
+                                        </a>
+                                        </li>
+                                        </ul>*@
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="~/Home/ContactUs">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pq-menu-search-block">
+                            @*<a href="javascript:void(0)" id="pq-seacrh-btn"><i class="fa fa-search"></i></a>
+                            <div class="pq-search-form">
+
+                            <form role="search" method="get" class="search-form"
+                            action="https://localhost:44377/Home/">
+                            <label>
+                            <span class="screen-reader-text">Search for:</span>
+                            <input type="search" class="search-field" placeholder="Search …" value="" name="">
+                            </label>
+                            <button type="submit" class="search-submit">
+                            <span class="screen-reader-text">Search</span>
+                            </button>
+                            </form>
+                            </div>*@
+                        </div>
+                        <a href="~/Home/FreeQuote" class="pq-button">
+                            <div class="pq-button-block">
+
+                                <span class="pq-button-text">Free Quote</span>
+                            </div>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Header End-->
+<!--Breadcrumb Start-->
+<div class="pq-breadcrumb pq-bg-dark pq-bg-img-2">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <nav aria-label="breadcrumb">
+                    <div class="pq-breadcrumb-title">
+                        <h1>Finance</h1>
+                    </div>
+                    <div class="pq-breadcrumb-container">
+                        <ol class="breadcrumb align-items-center">
+                            <li class="breadcrumb-item">
+                                <a @*href="#"*@>
+                                    @*<i class="fa fa-home me-2"></i>*@We(e) help finance companies capitalize on the potential of business technologies to overcome
+                                    their challenges and maximize potential
+                                </a>
+                            </li>
+                            @*<li class="breadcrumb-item active">Finance</li>*@
+                        </ol>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Breadcrumb End-->
+<!--3 Column Start-->
+<section class="pq-pb-190">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="pq-grid-container">
+                    <div class="pq-filters">
+                        <div class="filters pq-filter-button-group">
+                            <ul>
+                                <li class="active pq-filter-btn" data-filter="*">All</li>
+                                <li class="pq-filter-btn" data-filter=".14">At a Glance</li>
+                                <li class="pq-filter-btn" data-filter=".5">Challenges</li>
+                                <li class="pq-filter-btn" data-filter=".15" style="text-transform:none;">HOW We(e) CAN HELP</li>
+                                @*<li class="pq-filter-btn" data-filter=".8">Technology</li>*@
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pq-grid " data-next_items="3" data-initial_items="6">
+                        <div class="pq-grid-item pq-filter-items pq-crop-img  14  ">
+                            <div class="row mt-4  border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/glance.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <h2 class="pq-about-title mt-4 mt-lg-0">
+                                        <a href="#">
+                                            Finance Industry At A Glance
+                                        </a>
+                                    </h2>
+                                    <p class="pq-description mb-0">
+                                        The finance industry is a critical sector of the global economy, playing a
+                                        significant role in managing the flow of money, investments, and
+                                        financial risk. It includes various activities, such as banking, investment, insurance, and asset management, among others.
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        Banks are financial institutions that are responsible for handling financial
+                                        transactions, such as deposits, loans, and investments. They play a vital
+                                        role in the economy by providing credit, managing liquidity, and facilitating
+                                        transactions. There are different types of banks, including commercial
+                                        banks, investment banks, and central banks.
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        The investment industry includes a broad range of activities related to
+                                        managing and investing money. It includes asset management, hedge
+                                        funds, private equity, and venture capital.
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        The insurance industry is responsible for protecting individuals and
+                                        businesses against financial losses due to unforeseen events such as
+                                        accidents, illnesses, and natural disasters. It includes various types of
+                                        insurance, such as health, life, auto, and property insurance.
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        Asset management is the management of a portfolio of assets on behalf of
+                                        clients. It includes various types of assets, such as stocks, bonds, and real
+                                        estate.
+                                    </p>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+
+                        </div>
+
+                        <div class="pq-grid-item pq-filter-items  pq-crop-img  5 ">
+                            <div class="row mt-4 border-0 5">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/industry.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <h2 class="pq-about-title mt-4 mt-lg-0">
+                                        <a href="#">
+                                            Finance Industry Challenges
+
+                                        </a>
+                                    </h2>
+                                    <p class="pq-description mb-0">
+                                        The finance industry has been facing several challenges over the
+                                        years, and as the world becomes more interconnected and technology
+                                        continues to advance, these challenges are only increasing. Lets
+                                        explore some of the biggest challenges facing the industry today.
+                                    </p>
+                                    <p class="pq-description mb-0" style="font-weight:bold;">Cybersecurity</p>
+                                    <p class="pq-description mb-0">
+                                        Cybersecurity is a major challenge for the finance industry. With the
+                                        increasing use of technology and the rise of online banking, there are
+                                        more opportunities for cybercriminals to steal sensitive data and funds.
+                                    </p>
+                                    <p class="pq-description mb-0" style="font-weight:bold;">Regulatory Compliance</p>
+                                    <p class="pq-description mb-0">
+                                        The finance industry is heavily regulated, with numerous laws and
+                                        regulations governing everything from lending practices to anti-money
+                                        laundering policies. The regulatory landscape is constantly evolving, and financial institutions must keep up to date with changes to avoid
+                                        penalties and maintain their reputation.
+                                    </p>
+                                    <p class="pq-description mb-0" style="font-weight:bold;">
+                                        Technological Disruption
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        Technology is rapidly changing the finance industry, with new
+                                        innovations such as blockchain and AI transforming the way financial
+                                        institutions operate. While these technologies offer exciting new
+                                        opportunities, they also pose a challenge for traditional financial
+                                        institutions that may struggle to adapt.
+                                    </p>
+                                    <p class="pq-description mb-0" style="font-weight:bold;">Customer Expectations</p>
+                                    <p class="pq-description mb-0">
+                                        Customers' expectations are changing, and financial institutions must
+                                        adapt to keep up. Customers now expect fast, convenient, and
+                                        personalized services, and they want to be able to access their
+                                        accounts and manage their finances on the go.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+                        </div>
+
+                        <div class="pq-grid-item pq-filter-items  pq-crop-img  15 ">
+                            <div class="row mt-4 border-0 15">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/challenges.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <h2 class="pq-about-title mt-4 mt-lg-0 ">
+                                        <a href="#" style="text-transform:none;">
+                                            How We(e) Can Help The Financial
+                                            Industry Meet Their Challenges
+                                        </a>
+                                    </h2>
+                                    <p class="pq-description mb-0">
+                                        The finance industry is a constantly evolving landscape that requires a high level
+                                        of innovation and adaptability. With the increasing complexity of financial
+                                        transactions, the finance industry faces significant challenges in terms of data
+                                        analysis, automation, cyber security, and the adoption of cloud solutions. To
+                                        overcome these challenges and drive growth, We(e)’s suite of business
+                                        technology solutions can help.
+                                    </p>
+                                    <p>
+                                        Let’s explore how We(e) can help the finance industry deal with challenges
+                                        through software development, cyber security, cloud, database, data analysis, automation, and Office 365 solutions.
+                                    </p>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/development.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    @*<h2 class="pq-about-title mt-4 mt-lg-0">
+                                    <a href="about-us.html">
+                                    Benefits of Our IPC Model
+                                    </a>
+                                    </h2>*@
+                                    <p class="pq-description mb-0" style="font-weight:bold">
+                                        Software Development
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        In the finance industry, software development is essential to meet the
+                                        demands of customers who expect real-time access to financial
+                                        information. We(e)’s software development team can develop new
+                                        custom applications and databases to meet unique needs or enhance
+                                        the functionality of existing systems, automate processes, and
+                                        streamline operations.
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        We(e)’s can also help financial institutions develop mobile applications
+                                        that enable customers to manage their accounts and make transactions
+                                        from their mobile devices.
+
+                                    </p>
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/cybersceurity3.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    @*<h2 class="pq-about-title mt-4 mt-lg-0">
+                                    <a href="about-us.html">
+                                    Streamlined Model To Pass On
+                                    Cost Savings To Our Customers
+                                    </a>
+                                    </h2>*@
+                                    <p class="pq-description mb-0" style="font-weight:bold;">
+                                        Cyber Security
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        The finance industry is a prime target for cyber attacks due to the high- value transactions and sensitive information that is processed through
+                                        financial institutions. To protect against cyber threats, We(e) can
+                                        provide a range of cybersecurity solutions, including risk assessments, vulnerability testing, and penetration testing. They can also provide
+                                        network security solutions, including firewalls, intrusion detection and
+                                        prevention systems, and data encryption. These cybersecurity solutions
+                                        can help financial institutions protect their data and prevent costly data
+                                        breaches.
+
+                                    </p>
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/cloudsolution.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    @*<h2 class="pq-about-title mt-4 mt-lg-0">
+                                    <a href="about-us.html">Join Us on the Path to Success</a>
+                                    </h2>*@
+                                    <p class="pq-description mb-0" style="font-weight:bold">
+                                        Cloud Solutions
+
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        Cloud computing is transforming the finance industry by providing
+                                        financial institutions with the flexibility and scalability needed to keep up
+                                        with changing business needs. We(e) can provide cloud solutions that
+                                        enable financial institutions to migrate their systems to the cloud, reducing costs and improving operational efficiency. These cloud
+                                        solutions can include infrastructure as a service (IaaS), platform as a
+                                        service (PaaS), and software as a service (SaaS) solutions.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/blockchain3.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    @*<h2 class="pq-about-title mt-4 mt-lg-0">
+                                    <a href="about-us.html">
+                                    Streamlined Model To Pass On
+                                    Cost Savings To Our Customers
+                                    </a>
+                                    </h2>*@
+                                    <p class="pq-description mb-0" style="font-weight:bold">
+                                        Blockchain Solutions
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        Blockchain has the potential to transform the finance industry, but it is
+                                        not without challenges. By partnering with We(e), finance companies
+                                        can leverage blockchain technology to overcome these challenges and
+                                        unlock the benefits of this revolutionary technology. Whether it is
+                                        enhancing security, improving transparency, reducing costs, increasing
+                                        efficiency, or enhancing the customer experience, We(e) can help
+                                        finance companies implement blockchain-based solutions that drive
+                                        growth, innovation, and success.
+
+                                    </p>
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/dataanalysis4.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    @*<h2 class="pq-about-title mt-4 mt-lg-0">
+                                    <a href="about-us.html">Join Us on the Path to Success</a>
+                                    </h2>*@
+                                    <p class="pq-description mb-0" style="font-weight:bold">
+                                        Data Analysis
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        The finance industry generates vast amounts of data, making it difficult
+                                        to extract meaningful insights. We(e)’s data analysis team can enable
+                                        financial institutions to make informed decisions based on their data. These services can include data mining, statistical analysis, and
+                                        predictive analytics, which can help financial institutions identify trends, make predictions, and improve decision-making.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/automation.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    @*<h2 class="pq-about-title mt-4 mt-lg-0">
+                                    <a href="about-us.html">
+                                    Streamlined Model To Pass On
+                                    Cost Savings To Our Customers
+                                    </a>
+                                    </h2>*@
+                                    <p class="pq-description mb-0" style="font-weight:bold">
+                                        Automation
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        Automation is essential to the finance industry, as it can help financial
+                                        institutions reduce costs, improve efficiency, and enhance customer
+                                        service. We(e) can provide automation solutions that enable financial
+                                        institutions to automate repetitive tasks, such as data entry, processing, and analysis. These automation solutions can be customized to meet
+                                        the unique needs of financial institutions, reducing errors, and
+                                        improving accuracy.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row">
+                            </div>
+                            <div class="row mt-4 border-0">
+                                <div class="col-lg-6">
+                                    <img src="~/Content/WebsiteContent/images/erp.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    @*<h2 class="pq-about-title mt-4 mt-lg-0">
+                                    <a href="about-us.html">Join Us on the Path to Success</a>
+                                    </h2>*@
+                                    <p class="pq-description mb-0" style="font-weight:bold">
+                                        Office 365 Solutions
+                                    </p>
+                                    <p class="pq-description mb-0">
+                                        Office 365 is a suite of cloud-based tools that enables financial
+                                        institutions to collaborate, communicate, and manage their operations
+                                        more efficiently. We(e) can provide Office 365 solutions that enable
+                                        financial institutions to access tools such as Microsoft Teams, SharePoint, and OneDrive. These solutions can help financial
+                                        institutions collaborate in real-time, store and manage documents
+                                        securely, and access their data from any location.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    @*<div class="text-center">
+                    <a href="#" class="pq-button" id="showMore">
+                    <div class="pq-button-block">
+                    <span class="pq-button-text">Load More</span>
+                    </div>
+                    </a>
+                    </div>*@
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--3 Column End-->
